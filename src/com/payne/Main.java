@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.payne.leetCode.P_12_Integer2Roman;
 import com.payne.leetCode.P_13_Roman2Integer;
+import com.payne.leetCode.P_557_ReverseWords;
 import com.payne.leetCode.P_5_LongestPalindromicSubstring;
 import com.payne.leetCode.P_728_SelfDividingNumbers;
 
@@ -26,9 +27,13 @@ public class Main {
 		Long t2 = System.currentTimeMillis();
 		System.out.println("input length = " + input.length() + "; s = " + s + ";  time = " + (t2 - t1));*/
 
-		P_728_SelfDividingNumbers p728=new P_728_SelfDividingNumbers();
+		/*P_728_SelfDividingNumbers p728=new P_728_SelfDividingNumbers();
 		List<Integer> list = p728.selfDividingNumbers(1, 22);
-		System.out.print("");
+		System.out.print("");*/
+
+		P_557_ReverseWords p557 = new P_557_ReverseWords();
+		String s = p557.reverseWords("Let's take LeetCode contest");
+		System.out.println(" s = " + s);
 
 	}
 }
