@@ -1,23 +1,22 @@
 package com.payne;
 
-import java.util.List;
+import com.payne.leetCode.*;
 
-import com.payne.leetCode.P_12_Integer2Roman;
-import com.payne.leetCode.P_13_Roman2Integer;
-import com.payne.leetCode.P_557_ReverseWords;
-import com.payne.leetCode.P_5_LongestPalindromicSubstring;
-import com.payne.leetCode.P_728_SelfDividingNumbers;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*P_12_Integer2Roman p12 = new P_12_Integer2Roman();
 		String s = p12.intToRoman(1900);
 		System.out.println(" s = " + s);
 
 		P_13_Roman2Integer p13 = new P_13_Roman2Integer();
-		int i = p13.romanToInt(s);
-		System.out.println(" i = " + i);*/
+		int I = p13.romanToInt(s);
+		System.out.println(" I = " + I);*/
 
 		/*Long t1 = System.currentTimeMillis();
 		P_5_LongestPalindromicSubstring p5 = new P_5_LongestPalindromicSubstring();
@@ -31,9 +30,121 @@ public class Main {
 		List<Integer> list = p728.selfDividingNumbers(1, 22);
 		System.out.print("");*/
 
-		P_557_ReverseWords p557 = new P_557_ReverseWords();
+		/*P_557_ReverseWords p557 = new P_557_ReverseWords();
 		String s = p557.reverseWords("Let's take LeetCode contest");
-		System.out.println(" s = " + s);
+		System.out.println(" s = " + s);*/
 
-	}
+        /*P_44_WildcardMatching p44 = new P_44_WildcardMatching();
+        boolean match = p44.isMatch("ab", "?*");
+        System.out.println(" match = " + match);*/
+
+
+       /* HashMap<String ,String> map=new HashMap<>();
+        map.put("1","11");
+        map.put("2","22");
+        map.put("3","33");
+        map.put("4","44");
+        map.get("1");*/
+
+
+        Long l = (long) (1000 * 60 * 60 * 24 * 30);
+        Long l2 = (long) (1000 * 60 * 60 * 24);
+        Long l3 = l2 * 30;
+        System.out.println(" l = " + l);
+        System.out.println(" l2 = " + l2);
+        System.out.println(" l3 = " + l3);
+
+
+        //初始化数据
+        List<User> userList = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            User user = new User();
+            user.setUserName("lilongsheng" + i);
+            userList.add(user);
+        }
+
+        //命令式方式实现
+        List<String> newUserNameList1 = new ArrayList<>();
+        for (int i = 0; i < userList.size(); i++) {
+            User user = userList.get(i);
+            newUserNameList1.add(user.getUserName());
+        }
+
+
+        //函数式方式实现 java 8 funcational
+        List<String> newUserNameList2 = userList.stream()
+                .map(p -> p.getUserName())
+                .collect(Collectors.toList());
+
+
+    }
+
+
+    public static class User {
+
+        /**
+         * 主键
+         */
+        private Integer id;
+        /**
+         * 用户名
+         */
+        private String userName;
+        /**
+         * 用户密码
+         */
+        private String userPassword;
+        /**
+         * 年龄
+         */
+        private Integer age;
+        /**
+         * 电话
+         */
+        private String phone;
+
+        /*其它属性*/
+
+        public Integer getId() {
+            return id;
+        }
+
+        public void setId(Integer id) {
+            this.id = id;
+        }
+
+        public String getUserName() {
+            return userName;
+        }
+
+        public void setUserName(String userName) {
+            this.userName = userName;
+        }
+
+        public String getUserPassword() {
+            return userPassword;
+        }
+
+        public void setUserPassword(String userPassword) {
+            this.userPassword = userPassword;
+        }
+
+        public Integer getAge() {
+            return age;
+        }
+
+        public void setAge(Integer age) {
+            this.age = age;
+        }
+
+        public String getPhone() {
+            return phone;
+        }
+
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
+    }
+
+
 }
