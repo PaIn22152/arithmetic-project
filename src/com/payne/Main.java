@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.payne.leetCode.P_12_Integer2Roman;
 import com.payne.leetCode.P_13_Roman2Integer;
+import com.payne.leetCode.P_500_KeyboardRow;
 import com.payne.leetCode.P_557_ReverseWords;
 import com.payne.leetCode.P_5_LongestPalindromicSubstring;
 import com.payne.leetCode.P_728_SelfDividingNumbers;
@@ -31,9 +32,14 @@ public class Main {
 		List<Integer> list = p728.selfDividingNumbers(1, 22);
 		System.out.print("");*/
 
-		P_557_ReverseWords p557 = new P_557_ReverseWords();
+		/*P_557_ReverseWords p557 = new P_557_ReverseWords();
 		String s = p557.reverseWords("Let's take LeetCode contest");
-		System.out.println(" s = " + s);
+		System.out.println(" s = " + s);*/
+
+		String[] strings = {"abdfs","cccd","a","qwwewm"};
+		P_500_KeyboardRow p500 = new P_500_KeyboardRow();
+		String[] words = p500.findWords(strings);
+		System.out.println("words = " + words.toString());
 
 	}
 }

@@ -31,12 +31,12 @@ public class P_557_ReverseWords {
 		return sb.toString();
 	}
 
-	private String reverseWord(String word) {
-		if (word == null || word.length() == 0 || word.length() == 1) {
-			return word;
+	private String reverseWord(String s) {
+		if (s == null || s.length() == 0 || s.length() == 1) {
+			return s;
 		}
 		StringBuilder sb = new StringBuilder();
-		char[] chars = word.toCharArray();
+		char[] chars = s.toCharArray();
 		for (int i = chars.length - 1; i >= 0; i--) {
 			sb.append(chars[i]);
 		}
