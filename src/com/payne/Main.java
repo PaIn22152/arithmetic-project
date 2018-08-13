@@ -1,38 +1,39 @@
 package com.payne;
 
-import com.payne.leetCode.*;
+import com.payne.leetCode.P_44_WildcardMatching;
+import com.payne.leetCode.P_504_Base7;
+import com.payne.leetCode.P_7_ReverseInteger;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
-		/*P_12_Integer2Roman p12 = new P_12_Integer2Roman();
-		String s = p12.intToRoman(1900);
-		System.out.println(" s = " + s);
+        /*P_12_Integer2Roman p12 = new P_12_Integer2Roman();
+        String s = p12.intToRoman(1900);
+        System.out.println(" s = " + s);
 
-		P_13_Roman2Integer p13 = new P_13_Roman2Integer();
-		int I = p13.romanToInt(s);
-		System.out.println(" I = " + I);*/
+        P_13_Roman2Integer p13 = new P_13_Roman2Integer();
+        int I = p13.romanToInt(s);
+        System.out.println(" I = " + I);
 
-		/*Long t1 = System.currentTimeMillis();
-		P_5_LongestPalindromicSubstring p5 = new P_5_LongestPalindromicSubstring();
-		//String input = "aaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaa";
-		String input = "abba";
-		String s = p5.longestPalindrome(input + input + input + input);
-		Long t2 = System.currentTimeMillis();
-		System.out.println("input length = " + input.length() + "; s = " + s + ";  time = " + (t2 - t1));*/
+        Long t1 = System.currentTimeMillis();
+        P_5_LongestPalindromicSubstring p5 = new P_5_LongestPalindromicSubstring();
+        //String input = "aaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaa";
+        String input = "abba";
+        String s = p5.longestPalindrome(input + input + input + input);
+        Long t2 = System.currentTimeMillis();
+        System.out.println("input length = " + input.length() + "; s = " + s + ";  time = " + (t2 - t1));
 
-		/*P_728_SelfDividingNumbers p728=new P_728_SelfDividingNumbers();
-		List<Integer> list = p728.selfDividingNumbers(1, 22);
-		System.out.print("");*/
+        P_728_SelfDividingNumbers p728 = new P_728_SelfDividingNumbers();
+        List<Integer> list = p728.selfDividingNumbers(1, 22);
+        System.out.print("");
 
-		/*P_557_ReverseWords p557 = new P_557_ReverseWords();
-		String s = p557.reverseWords("Let's take LeetCode contest");
-		System.out.println(" s = " + s);*/
+        P_557_ReverseWords p557 = new P_557_ReverseWords();
+        String s = p557.reverseWords("Let's take LeetCode contest");
+        System.out.println(" s = " + s);*/
 
         /*P_44_WildcardMatching p44 = new P_44_WildcardMatching();
         boolean match = p44.isMatch("ab", "?*");
@@ -47,7 +48,7 @@ public class Main {
         map.get("1");*/
 
 
-        Long l = (long) (1000 * 60 * 60 * 24 * 30);
+        /*Long l = (long) (1000 * 60 * 60 * 24 * 30);
         Long l2 = (long) (1000 * 60 * 60 * 24);
         Long l3 = l2 * 30;
         System.out.println(" l = " + l);
@@ -74,8 +75,24 @@ public class Main {
         //函数式方式实现 java 8 funcational
         List<String> newUserNameList2 = userList.stream()
                 .map(p -> p.getUserName())
-                .collect(Collectors.toList());
+                .collect(Collectors.toList());*/
 
+
+//        P_44_WildcardMatching p_44_wildcardMatching=new P_44_WildcardMatching();
+//        System.out.println(p_44_wildcardMatching.isMatch("abc","*abc*bbb"));
+//        System.out.println(p_44_wildcardMatching.isMatch("abcc","a**b"));
+//        System.out.println(p_44_wildcardMatching.isMatch("abc","a*"));
+
+        /*int num = 100;
+        P_504_Base7 p_504_base7 = new P_504_Base7();
+        System.out.println(num + " = " + p_504_base7.convertToBase7(num));*/
+
+        int num = -2147483648;
+        P_7_ReverseInteger p_7_reverseInteger = new P_7_ReverseInteger();
+        System.out.println(p_7_reverseInteger.reverse(num));
+
+//        System.out.println(" MAX_VALUE ="+Integer.MAX_VALUE);
+//        System.out.println(" MIN_VALUE ="+Integer.MIN_VALUE);
 
     }
 

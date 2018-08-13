@@ -7,7 +7,7 @@ package com.payne.leetCode;
 public class P_463_IslandPerimeter {
 
 	public int islandPerimeter(int[][] grid) {
-
+return 1;
 	}
 
 	private int getBorderNum(int[] nums){

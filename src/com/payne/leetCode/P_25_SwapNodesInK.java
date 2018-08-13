@@ -21,12 +21,12 @@ public class P_25_SwapNodesInK {
         return null;
     }
 
-    public ListNode reverse(ListNode head){
+    /*public ListNode reverse(ListNode head){
         if(head==null||head.next==null){
             return head;
         }
         
-    }
+    }*/
 
     public static class ListNode {
         int val;

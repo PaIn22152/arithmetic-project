@@ -21,10 +21,83 @@ package com.payne.leetCode;
 public class P_44_WildcardMatching {
 
     public boolean isMatch(String s, String p) {
-        return my(s, p);
+        //return my(s, p);
+        //return singleWildcard(s, p);
+        //return oneSequenceWildcard(s, p);
+        return sequenceWildcard(s, p);
+        //return true;
     }
 
+    //?通配符
+    private boolean singleWildcard(String s, String p) {
+        if (s.length() != p.length()) {
+            return false;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            char cs = s.charAt(i);
+            char cp = p.charAt(i);
+            if (cp != '?' && cs != cp) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static final String sSequenceWildcard = "\\*";
+
+    //裁剪后逐一对应
+    private boolean sequenceWildcard(String s, String p) {
+        String[] split = p.split(sSequenceWildcard);
+        for (String temp : split) {
+            System.out.println(" temp = " + temp);
+        }
+
+        //  abc *a*b*c
+        boolean head = false;
+        for (int i = 0; i < split.length; i++) {
+            if ("".equals(split[i])) {
+                head = true;
+            } else if (!head && !"".equals(split[i])) {
+                if (!s.startsWith(split[i])) {
+                    return false;
+                }
+            } else if (!head && "".equals(split[i])) {
+
+            }
+        }
+
+        return true;
+    }
+
+    //单个*通配符
+    private boolean oneSequenceWildcard(String s, String p) {
+        if (s.length() == p.length()) {
+            return singleWildcard(s, p.replace('*', '?'));
+        }
+        if (s.length() < p.length()) {
+            return false;
+        }
+        String newP = "";
+        for (int i = 0; i < p.length(); i++) {
+            char cp = p.charAt(i);
+            if (cp == '*') {
+                newP += "**";
+            } else {
+                newP += cp;
+            }
+        }
+        if (newP.length() > p.length()) {
+            return oneSequenceWildcard(s, newP);
+        } else return false;
+
+
+    }
+
+
     public boolean my(String s, String p) {
+        if (s == null && p == null) {
+            return true;
+        }
         if (s == null || p == null) {
             return false;
         }
@@ -34,6 +107,7 @@ public class P_44_WildcardMatching {
         if (!containWildcard(s) && !containWildcard(p)) {
             return s.equals(p);
         }
+
 
         int length = s.length();
         int j = 0;
