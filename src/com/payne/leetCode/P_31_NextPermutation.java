@@ -28,7 +28,7 @@ public class P_31_NextPermutation {
      */
 
     public void nextPermutation(int[] nums) {
-        my(nums);
+       // my(nums);
     }
 
     public void my(Integer[] nums) {
