@@ -42,7 +42,7 @@ public class P_7_ReverseInteger {
         if (x == 0) {
             return 0;
         } else if (x < 0) {
-            if(x==Integer.MIN_VALUE){
+            if (x == Integer.MIN_VALUE) {
                 return 0;
             }
             return 0 - my(-x);
@@ -57,7 +57,7 @@ public class P_7_ReverseInteger {
             System.out.println(result);
             int div10 = (int) (Double.parseDouble(result) / 10D);
             int remainder = (int) (Double.parseDouble(result) % 10D);
-            if(Integer.MAX_VALUE/10<div10){
+            if (Integer.MAX_VALUE / 10 < div10) {
                 return 0;
             }
             return div10 * 10 + remainder;

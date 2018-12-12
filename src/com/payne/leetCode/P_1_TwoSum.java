@@ -32,7 +32,6 @@ public class P_1_TwoSum {
         }
       }
     }
-    Integer.parseInt("");
     return result;
 
 
