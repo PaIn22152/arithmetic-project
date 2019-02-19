@@ -17,4 +17,33 @@ package com.payne.sorts;
  * 直到整个序列按关键码有序。
  */
 public class S_3_SimpleSelectionSort {
+
+    /**
+     * random array.
+     * len = 90000
+     * time = 3*1000 ms
+     * */
+    public static int[] sort(int array[], int count) {
+
+        for (int i = 0; i < count; i++) {
+
+            // 最小元素的位置
+            int index = i;
+            // 找出最小的元素所在的位置
+            for (int j = i + 1; j < count; j++) {
+
+                if (array[j] < array[index]) {
+                    index = j;
+                }
+
+            }
+            // 交换元素
+            int temp = array[index];
+            array[index] = array[i];
+            array[i] = temp;
+
+        }
+        return array;
+    }
+
 }

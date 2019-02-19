@@ -7,15 +7,13 @@ import com.af.dexdiff.build.TinkerPatchException;
 import com.af.dexdiff.build.Utils;
 import com.af.dexdiff.dex.Dex;
 import com.af.dexdiff.enc.AESHelper;
-import com.af.dexdiff.launcher.DexDiff;
 import com.af.dexdiff.launcher.DexHandler;
 import com.af.dexdiff.launcher.DexPatch;
 import com.af.dexdiff.launcher.DexPatchApplier;
 import com.af.dexdiff.launcher.DexPatchGenerator;
 import com.payne.bsdiff.BSDiff;
 import com.payne.u3k.CRC32Check;
-import com.payne.u3k.DecryptUtil;
-import com.payne.u3k.InnerData;
+import com.payne.utils.PrintHelper;
 import com.payne.zip.ZipUtils;
 
 import java.io.File;
@@ -263,6 +261,17 @@ public class Test {
         return CRC32Check.crcCalcFile(s1)-CRC32Check.crcCalcFile(s2)==0;
     }
 
+    private static void gghgh(){
+
+        String path="C:\\Users\\AF-USER-1\\Desktop\\cacheFiles\\aps\\";
+        String md51=MD5.getMD5(new File(path+"aps_module.aps1.2.1.so"));
+        String md52=MD5.getMD5(new File(path+"aps1.2.1.so"));
+        PrintHelper.println(md51);
+        PrintHelper.println(md52);
+    }
+
+
+
 
     public static void Test() {
 
@@ -270,7 +279,7 @@ public class Test {
             //encFile("D:\\cache-files\\u3k-diff\\ntv\\p_8-9.patch","D:\\cache-files\\u3k-diff\\ntv\\p_10-11.patch.so");
 
 
-           fii();
+            gghgh();
 
             if (true) {
                 return;

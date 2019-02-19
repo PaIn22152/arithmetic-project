@@ -31,12 +31,12 @@ public class P_955_DeleteColumnsToMakeSortedII {
      * We require at least 1 deletion since initially A was not in lexicographic order, so the answer is 1.
      */
 
-    public int minDeletionSize(String[] A) {
-        String order = "abcdefghijklmnopqrstuvwxyz";
-        if(isAlienSorted(A,order)){
-
-        }
-    }
+//    public int minDeletionSize(String[] A) {
+//        String order = "abcdefghijklmnopqrstuvwxyz";
+//        if(isAlienSorted(A,order)){
+//
+//        }
+//    }
 
     public boolean isAlienSorted(String[] words, String order) {
 

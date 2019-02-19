@@ -21,4 +21,8 @@ package com.payne.sorts;
  * 且最后一个增量因子必须为1。希尔排序方法是一个不稳定的排序方法
  */
 public class S_2_ShellSort {
+
+//    public static int[] sort(int array[], int count) {
+//
+//    }
 }

@@ -21,4 +21,95 @@ package com.payne.sorts;
  * 从而使排序趟数几乎减少了一半。
  */
 public class S_5_BubbleSort {
+//    public static int[] sort(int array[], int count) {
+//
+//        //return bubblingSort1(array, count);
+//        return bubblingSortOpt2(array, count);
+//
+//    }
+
+
+    /**
+     * random array.
+     * len = 90000
+     * time = 12*1000 ms
+     * */
+    public static int[] sort(int array[], int count) {
+
+        for (int i = 0; i < count; i++) {
+            for (int j = 0; j < count - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int tem = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = tem;
+                }
+            }
+        }
+        return array;
+
+    }
+
+    /**
+     * random array.
+     * len = 90000
+     * time = 12*1000 ms
+     * */
+    public static int[] sort1(int array[], int count) {
+
+        for (int i = 0; i < count; i++) {
+            boolean exchange = false;
+            for (int j = 0; j < count - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int tem = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = tem;
+                    exchange = true;
+                }
+            }
+            if (!exchange) {
+                return array;
+            }
+        }
+        return array;
+
+    }
+
+    /**
+     * random array.
+     * len = 90000
+     * time = 8*1000 ms
+     * */
+    public static int[] sort2(int array[], int count) {
+
+        for (int i = 0; i < count / 2; i++) {
+            boolean exchange = false;
+
+            //大数后移
+            for (int j = 0; j < count - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int tem = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = tem;
+                    exchange = true;
+                }
+            }
+
+
+            //小数前移
+            for (int j = count - 1; j > i; j--) {
+                if (array[j] < array[j - 1]) {
+                    int tem = array[j];
+                    array[j] = array[j - 1];
+                    array[j - 1] = tem;
+                    exchange = true;
+                }
+            }
+
+            if (!exchange) {
+                return array;
+            }
+        }
+        return array;
+
+    }
 }

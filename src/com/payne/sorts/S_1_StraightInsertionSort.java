@@ -16,18 +16,60 @@ package com.payne.sorts;
  */
 public class S_1_StraightInsertionSort {
 
-    public static int[] sort(int[] nums) {
-        int[] result = new int[nums.length];
-        result[0] = nums[0];
-    /*for(int i=1;i<nums.length;i++){
-        for(int j=0;j<result.length;j++){
-            if(nums[i]  >=result[j]){
-                result[j+1]=
+
+    /**
+     * random array.
+     * len = 90000
+     * time = 1*1000 ms
+     * */
+    public static int[] sort(int array[], int count) {
+        int[] result = new int[array.length];
+        result[0] = array[0];
+        for (int i = 1; i < count; i++) {//i，有序表len，array当前需要判断的pos
+            int pos = array[i];
+            boolean insert = false;
+            for (int j = 0; j < i; j++) {
+                if (result[j] > pos) {
+                    insert = true;
+                    for (int k = i; k > j; k--) {
+                        result[k] = result[k - 1];
+                    }
+                    result[j] = pos;
+                    break;
+                }
+            }
+            if (!insert) {
+                result[i] = pos;
             }
         }
-    }*/
-
         return result;
     }
+
+    public static int[] insertSort(int array[], int count) {
+
+        int i, j, k;
+
+        for (i = 1; i < count; i++) {
+
+            for (j = i - 1; j >= 0; j--) { // 为a[i]在a[0, i-1]上找一个合适的位置
+                if (array[j] < array[i]) break;
+            }
+
+            if (j != i - 1) { // 找到了一个合适的位置j
+
+                int temp = array[i];
+                // 将比array[i]大的数据全部往后移
+                for (k = i - 1; k > j; k--) {
+                    array[k + 1] = array[k];
+                }
+                // 将array[i]放入合适的位置
+                array[k + 1] = temp;
+
+            }
+
+        }
+        return array;
+    }
+
 
 }

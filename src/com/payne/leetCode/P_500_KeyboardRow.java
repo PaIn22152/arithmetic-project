@@ -81,41 +81,39 @@ public class P_500_KeyboardRow {
             int f = 0;
             boolean can = true;
             for (int i = 0; i < temp.length(); i++) {
-                String s = temp.substring(i, i + 1);
+                if (temp.length() == 1) {
+                    break;
+                }
+                String one = temp.substring(i, i + 1);
                 if (f == 0) {
-                    if (mapHigh.containsKey(s)) {
+                    if (mapHigh.containsValue(one)) {
                         f = 1;
                     }
-                    if (mapMid.containsKey(s)) {
+                    if (mapMid.containsValue(one)) {
                         f = 2;
                     }
-                    if (mapHigh.containsKey(s)) {
+                    if (mapLow.containsValue(one)) {
                         f = 3;
                     }
-                } else if (f == 1) {
-                    if (mapMid.containsKey(s)) {
+                    continue;
+                }
+
+                if (f == 1) {
+                    if (!mapHigh.containsValue(one)) {
                         can = false;
                         break;
                     }
-                    if (mapHigh.containsKey(s)) {
+                }
+
+                if (f == 2) {
+                    if (!mapMid.containsValue(one)) {
                         can = false;
                         break;
                     }
-                } else if (f == 2) {
-                    if (mapLow.containsKey(s)) {
-                        can = false;
-                        break;
-                    }
-                    if (mapHigh.containsKey(s)) {
-                        can = false;
-                        break;
-                    }
-                } else if (f == 3) {
-                    if (mapMid.containsKey(s)) {
-                        can = false;
-                        break;
-                    }
-                    if (mapLow.containsKey(s)) {
+                }
+
+                if (f == 3) {
+                    if (!mapLow.containsValue(one)) {
                         can = false;
                         break;
                     }
