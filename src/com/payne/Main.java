@@ -1,6 +1,6 @@
 package com.payne;
 
-import com.payne.leetCode.P_78;
+import com.payne.leetCode.contest.weekly_165.P_1275;
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
@@ -14,12 +14,11 @@ public class Main {
     private static void test() {
 
 
-
 //            String s="she1.2.1";
 //            PrintHelper.println(StringConvertor.string2IntArray(s));
 
 
-            //StringEncryptUtil.main();
+        //StringEncryptUtil.main();
 
 //            PrintHelper.start();
 //            P_967 p_957=new P_967();
@@ -29,7 +28,7 @@ public class Main {
 //            P_10 p10=new P_10();
 //            PrintHelper.println(p10.isMatch("abcd","a..d"));
 
-            //int[] is= IntegerArrayCreator.getRandomArray(4);
+        //int[] is= IntegerArrayCreator.getRandomArray(4);
 //            int[] is = {3, 2, 1, 4};
 //            PrintHelper.println(is);
 //
@@ -39,8 +38,8 @@ public class Main {
 //            PrintHelper.println(is);
 
 
-            //2147483647
-            //PrintHelper.println(Integer.MAX_VALUE);
+        //2147483647
+        //PrintHelper.println(Integer.MAX_VALUE);
 
 
 //            P_970 p970=new P_970();
@@ -154,15 +153,58 @@ public class Main {
 //        int[] a={1,17,8};
 //        PrintHelper.println(p_996.numSquarefulPerms(a));
 
-        P_78 p_78=new P_78();
-        int[] nums={1,2,3};
-        PrintHelper.println(p_78.subsets(nums));
+//        P_78 p_78=new P_78();
+//        int[] nums={1,2,3};
+//        PrintHelper.println(p_78.subsets(nums));
+
+//        PrintHelper.start();
+//        P_62 p_62 = new P_62();
+//        PrintHelper.println(p_62.uniquePaths(51, 9));
+//        PrintHelper.end();
 
 
+//        PrintHelper.println(Hex2Dec.convert("0xzz"));
+
+//        P_54 p_54=new P_54();
+//        int[][] m={{1,2,3},{4,5,6},{7,8,9},{1,2,3}};
+//        PrintHelper.println(p_54.spiralOrder(m));
+
+//        P_88 p_88=new P_88();
+//        int[] i1={1,2,3,0,0,0};
+//        int[] i2={2,5,6};
+//        p_88.merge(i1,3,i2,3);
+
+
+//        P_997 p_997=new P_997();
+//        int[][] ii={{1,2}};
+//        PrintHelper.println(p_997.findJudge(2,ii));
+
+//        P_1006 p_1006=new P_1006();
+//        p_1006.clumsy(10);
+
+//        FileUtil.del("C:\\Users\\AF-USER-1\\Desktop\\cacheFiles\\cleaner\\rtr.txt");
+
+
+//        P_1238 p_1238=new P_1238();
+//        p_1238.getValidNumber(7,3);
+
+//        P_1266 p_1266=new P_1266();
+//        int[][] is={{3,2},{-2,2}};
+//        int t= p_1266.minTimeToVisitAllPoints(is);
+//        System.out.println("t = "+t);
+
+//        P_1268 p_1268=new P_1268();
+//        String[] strings={"m"};
+//        p_1268.suggestedProducts(strings,"abcdef");
+
+        P_1275 p_1275=new P_1275();
+        int[][] input={{0,0},{2,0},{1,1},{2,1},{2,2}};
+        p_1275.tictactoe(input);
 
     }
 
-public static boolean B=true;
+    public static boolean B = true;
+
     private static int cpu() throws Exception {
         while (B) {
             for (int i = 0; i < 9600000; i++) ;
