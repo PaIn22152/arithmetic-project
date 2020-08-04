@@ -1,5 +1,6 @@
 package com.payne;
 
+import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
 import com.payne.utils.PrintHelper;
 
@@ -197,9 +198,13 @@ public class Main {
 //        String[] strings={"m"};
 //        p_1268.suggestedProducts(strings,"abcdef");
 
-        P_1275 p_1275=new P_1275();
-        int[][] input={{0,0},{2,0},{1,1},{2,1},{2,2}};
-        p_1275.tictactoe(input);
+//        P_1275 p_1275=new P_1275();
+//        int[][] input={{0,0},{2,0},{1,1},{2,1},{2,2}};
+//        p_1275.tictactoe(input);
+
+//        Weekly_179 weekly_179=new Weekly_179();
+//        int[] is={2,1,3,5,4};
+//        weekly_179.numTimesAllBlue(is);
 
     }
 
