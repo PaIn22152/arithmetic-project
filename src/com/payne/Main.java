@@ -2,6 +2,7 @@ package com.payne;
 
 import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
+import com.payne.leetCode.interview.Random1;
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
@@ -206,19 +207,19 @@ public class Main {
 //        int[] is={2,1,3,5,4};
 //        weekly_179.numTimesAllBlue(is);
 
+        Random1 random1 = new Random1();
+        int[][] tt =
+                {
+                        {1, 2, 7},
+                        {3, 6, 7}
+                };
+        random1.numBusesToDestination(tt,1,6);
+
     }
 
     public static boolean B = true;
 
-    private static int cpu() throws Exception {
-        while (B) {
-            for (int i = 0; i < 9600000; i++) ;
-            Thread.sleep(10);
 
-
-        }
-        return 0;
-    }
 
 
     private static String getDay() {
