@@ -3,6 +3,7 @@ package com.payne;
 import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
 import com.payne.leetCode.interview.Random1;
+import com.payne.leetCode.interview.Random2;
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
@@ -207,19 +208,23 @@ public class Main {
 //        int[] is={2,1,3,5,4};
 //        weekly_179.numTimesAllBlue(is);
 
-        Random1 random1 = new Random1();
-        int[][] tt =
-                {
-                        {1, 2, 7},
-                        {3, 6, 7}
-                };
-        random1.numBusesToDestination(tt,1,6);
+//        Random1 random1 = new Random1();
+//        int[][] tt =
+//                {
+//                        {1, 2, 7},
+//                        {3, 6, 7}
+//                };
+//        random1.numBusesToDestination(tt,1,6);
+
+        Random2 random2 = new Random2();
+//        int[] t = {2, 5, 3, 4, 1};
+//        random2.numTeams(t);
+
+        random2.knightProbability(8,30,6,4);
 
     }
 
     public static boolean B = true;
-
-
 
 
     private static String getDay() {
