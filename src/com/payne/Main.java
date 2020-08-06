@@ -5,9 +5,12 @@ import com.payne.leetCode.contest.weekly_165.P_1275;
 import com.payne.leetCode.interview.Random1;
 import com.payne.leetCode.interview.Random2;
 import com.payne.leetCode.interview.Random3;
+import com.payne.leetCode.p_s.P_148;
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -223,14 +226,30 @@ public class Main {
 //        random2.knightProbability(8,30,6,4);
 
 
-        Random3 random3 = new Random3();
-        int[][] tt =
-                {
-                        {1, 2, 3},
-                        {4, 5, 6},
-                        {7, 8, 9}
-                };
-        random3.findDiagonalOrder(tt);
+//        Random3 random3 = new Random3();
+//        int[][] tt =
+//                {
+//                        {1, 2, 3},
+//                        {4, 5, 6},
+//                        {7, 8, 9}
+//                };
+//        random3.findDiagonalOrder(tt);
+
+
+        P_148 p_148=new P_148();
+        List<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(4);
+        list.add(2);
+        list.add(3);
+        list.add(6);
+        list.add(2);
+        List<Integer> sort = p_148.sort(list);
+        d();
+
+    }
+
+    public static void d(){
 
     }
 

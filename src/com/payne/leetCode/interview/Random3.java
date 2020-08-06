@@ -1,6 +1,5 @@
 package com.payne.leetCode.interview;
 
-import com.payne.leetCode.swordOffer.O_22;
 
 /**
  * Project    arithmetic-project-git
@@ -102,9 +101,9 @@ public class Random3 {
      * 字符串中的字符只有 'c', 'r', 'o', 'a' 或者 'k'
      */
 
-    public int minNumberOfFrogs(String croakOfFrogs) {
-
-    }
+//    public int minNumberOfFrogs(String croakOfFrogs) {
+//
+//    }
 
 
     /**
