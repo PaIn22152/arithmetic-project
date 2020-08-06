@@ -164,6 +164,8 @@ public class Random2 {
      * 1 <= n <= 200
      * 1 <= rating[i] <= 10^5
      */
+
+    //左右双指针算法
     public int numTeams(int[] rating) {
         if (rating.length < 3) {
             return 0;
@@ -227,6 +229,8 @@ public class Random2 {
      * 或
      * 7 -> 6 -> 3 -> 2 -> 1
      */
+
+    //宽度优先算法  BFS
     public int integerReplacement(int i) {
         long n = (long) i;
         if (n == 1) {

@@ -4,6 +4,7 @@ import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
 import com.payne.leetCode.interview.Random1;
 import com.payne.leetCode.interview.Random2;
+import com.payne.leetCode.interview.Random3;
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
@@ -216,11 +217,20 @@ public class Main {
 //                };
 //        random1.numBusesToDestination(tt,1,6);
 
-        Random2 random2 = new Random2();
+//        Random2 random2 = new Random2();
 //        int[] t = {2, 5, 3, 4, 1};
 //        random2.numTeams(t);
+//        random2.knightProbability(8,30,6,4);
 
-        random2.knightProbability(8,30,6,4);
+
+        Random3 random3 = new Random3();
+        int[][] tt =
+                {
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9}
+                };
+        random3.findDiagonalOrder(tt);
 
     }
 
