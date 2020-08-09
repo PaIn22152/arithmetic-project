@@ -1,6 +1,7 @@
 package com.payne;
 
-import com.payne.leetCode.P_78;
+import com.payne.leetCode.contest.DW_18;
+import com.payne.leetCode.solutions.P_16;
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
@@ -14,12 +15,11 @@ public class Main {
     private static void test() {
 
 
-
 //            String s="she1.2.1";
 //            PrintHelper.println(StringConvertor.string2IntArray(s));
 
 
-            //StringEncryptUtil.main();
+        //StringEncryptUtil.main();
 
 //            PrintHelper.start();
 //            P_967 p_957=new P_967();
@@ -29,7 +29,7 @@ public class Main {
 //            P_10 p10=new P_10();
 //            PrintHelper.println(p10.isMatch("abcd","a..d"));
 
-            //int[] is= IntegerArrayCreator.getRandomArray(4);
+        //int[] is= IntegerArrayCreator.getRandomArray(4);
 //            int[] is = {3, 2, 1, 4};
 //            PrintHelper.println(is);
 //
@@ -39,8 +39,8 @@ public class Main {
 //            PrintHelper.println(is);
 
 
-            //2147483647
-            //PrintHelper.println(Integer.MAX_VALUE);
+        //2147483647
+        //PrintHelper.println(Integer.MAX_VALUE);
 
 
 //            P_970 p970=new P_970();
@@ -154,15 +154,34 @@ public class Main {
 //        int[] a={1,17,8};
 //        PrintHelper.println(p_996.numSquarefulPerms(a));
 
-        P_78 p_78=new P_78();
-        int[] nums={1,2,3};
-        PrintHelper.println(p_78.subsets(nums));
+//        P_78 p_78=new P_78();
+//        int[] nums={1,2,3};
+//        PrintHelper.println(p_78.subsets(nums));
 
+//        P_1030 p_1030=new P_1030();
+//        int[][] ints = p_1030.allCellsDistOrder(1, 2, 0, 0);
+//
+//        PrintHelper.println(ints);
+
+
+//        int[][] cost={{518,518},{71,971},{121,862},{967,607},{138,754},
+//                {513,337},{499,873},{337,387},{647,917},{76,417}};
+//        P_1029 p_1029=new P_1029();
+//        int i = p_1029.twoCitySchedCost(cost);
+
+//        P_5232 p_5232=new P_5232();
+//        p_5232.balancedString("WWEQERQWQWWRWWERQWEQ");
+//        p_5232.balancedString("WQWRQQQW");
+
+//        P_5230 p_5230 = new P_5230();
+//        int[][] is = {{1, 1}, {2, 2}, {3, 4}, {4, 5}, {5, 6}, {7, 7}};
+//        p_5230.checkStraightLine(is);
 
 
     }
 
-public static boolean B=true;
+    public static boolean B = true;
+
     private static int cpu() throws Exception {
         while (B) {
             for (int i = 0; i < 9600000; i++) ;
@@ -185,7 +204,12 @@ public static boolean B=true;
 
     public static void main(String[] args) {
 
-        test();
+//        test();
+
+        DW_18 dw_18 = new DW_18();
+        int[] i = {28, -21, 30, 33, 24, 15, 46, 21, 8, -9, -2, -31,
+                0, 27, -2, 33, -4, 31, 38, 5, -20, -45, -18};
+        dw_18.arrayRankTransform(i);
 
 
     }
