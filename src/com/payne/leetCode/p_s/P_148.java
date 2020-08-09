@@ -1,28 +1,62 @@
-package com.payne.sorts;
+package com.payne.leetCode.p_s;
+
+
+import com.payne.leetCode.ListNode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
- * Author:  Payne
- * Date:  2018/1/1
- * About:归并排序（Merge Sort）
- * 基本思想：
- * 归并（Merge）排序法是将两个（或两个以上）有序表合并成一个新的有序表，
- * 即把待排序序列分为若干个子序列，每个子序列是有序的。然后再把有序子序列合并为整体有序序列。
- * 设r[i…n]由两个有序子表r[i…m]和r[m+1…n]组成，两个子表长度分别为n-i +1、n-m。
- * j=m+1；k=i；i=i; //置两个子表的起始下标及辅助数组的起始下标
- * 若i>m 或j>n，转⑷ //其中一个子表已合并完，比较选取结束
- * //选取r[i]和r[j]较小的存入辅助数组rf
- * 如果r[i]<r[j]，rf[k]=r[i]； i++； k++； 转⑵
- * 否则，rf[k]=r[j]； j++； k++； 转⑵
- * //将尚未处理完的子表中元素存入rf
- * 如果i<=m，将r[i…m]存入rf[k…n] //前一子表非空
- * 如果j<=n ,  将r[j…n] 存入rf[k…n] //后一子表非空
- * 合并结束。
+ * Project    arithmetic-project-git
+ * Path       com.payne.leetCode.p_s
+ * Date       2020/08/06 - 17:18
+ * Author     Payne.
+ * About      类描述：
  */
-public class S_7_MergeSort {
 
+public class P_148 {
+
+    /**
+     * 在 O(n log n) 时间复杂度和常数级空间复杂度下，对链表进行排序。
+     * 示例 1:
+     * 输入: 4->2->1->3
+     * 输出: 1->2->3->4
+     * <p>
+     * 示例 2:
+     * 输入: -1->5->3->4->0
+     * 输出: -1->0->3->4->5
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/sort-list
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     */
+
+
+    //链表转list，list排序，list转链表
+    //性能效率不够好
+    public ListNode sortList(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        while (head != null) {
+            list.add(head.val);
+            head = head.next;
+        }
+        Collections.sort(list);
+        ListNode last = null;
+        for (int i = list.size() - 1; i >= 0; i--) {
+            int v = list.get(i);
+            ListNode listNode = new ListNode(v);
+            listNode.next = last;
+            last = listNode;
+        }
+        return last;
+    }
+
+
+    //归并排序
+//    public ListNode sortList2(ListNode head) {
+//
+//    }
 
 
     //
@@ -109,5 +143,4 @@ public class S_7_MergeSort {
         }
         return mer;
     }
-
 }

@@ -1,10 +1,21 @@
 package com.payne;
 
+<<<<<<< HEAD
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.solutions.P_16;
+=======
+import com.payne.leetCode.contest.Weekly_179;
+import com.payne.leetCode.contest.weekly_165.P_1275;
+import com.payne.leetCode.interview.Random1;
+import com.payne.leetCode.interview.Random2;
+import com.payne.leetCode.interview.Random3;
+import com.payne.leetCode.p_s.P_148;
+>>>>>>> 7aa2f9d771102a2de258354037a452a3468ec503
 import com.payne.utils.PrintHelper;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -157,6 +168,7 @@ public class Main {
 //        P_78 p_78=new P_78();
 //        int[] nums={1,2,3};
 //        PrintHelper.println(p_78.subsets(nums));
+<<<<<<< HEAD
 
 //        P_1030 p_1030=new P_1030();
 //        int[][] ints = p_1030.allCellsDistOrder(1, 2, 0, 0);
@@ -176,21 +188,108 @@ public class Main {
 //        P_5230 p_5230 = new P_5230();
 //        int[][] is = {{1, 1}, {2, 2}, {3, 4}, {4, 5}, {5, 6}, {7, 7}};
 //        p_5230.checkStraightLine(is);
+=======
+
+//        PrintHelper.start();
+//        P_62 p_62 = new P_62();
+//        PrintHelper.println(p_62.uniquePaths(51, 9));
+//        PrintHelper.end();
+>>>>>>> 7aa2f9d771102a2de258354037a452a3468ec503
 
 
-    }
+//        PrintHelper.println(Hex2Dec.convert("0xzz"));
 
+//        P_54 p_54=new P_54();
+//        int[][] m={{1,2,3},{4,5,6},{7,8,9},{1,2,3}};
+//        PrintHelper.println(p_54.spiralOrder(m));
+
+//        P_88 p_88=new P_88();
+//        int[] i1={1,2,3,0,0,0};
+//        int[] i2={2,5,6};
+//        p_88.merge(i1,3,i2,3);
+
+
+//        P_997 p_997=new P_997();
+//        int[][] ii={{1,2}};
+//        PrintHelper.println(p_997.findJudge(2,ii));
+
+//        P_1006 p_1006=new P_1006();
+//        p_1006.clumsy(10);
+
+//        FileUtil.del("C:\\Users\\AF-USER-1\\Desktop\\cacheFiles\\cleaner\\rtr.txt");
+
+
+//        P_1238 p_1238=new P_1238();
+//        p_1238.getValidNumber(7,3);
+
+//        P_1266 p_1266=new P_1266();
+//        int[][] is={{3,2},{-2,2}};
+//        int t= p_1266.minTimeToVisitAllPoints(is);
+//        System.out.println("t = "+t);
+
+<<<<<<< HEAD
     public static boolean B = true;
 
     private static int cpu() throws Exception {
         while (B) {
             for (int i = 0; i < 9600000; i++) ;
             Thread.sleep(10);
+=======
+//        P_1268 p_1268=new P_1268();
+//        String[] strings={"m"};
+//        p_1268.suggestedProducts(strings,"abcdef");
+>>>>>>> 7aa2f9d771102a2de258354037a452a3468ec503
+
+//        P_1275 p_1275=new P_1275();
+//        int[][] input={{0,0},{2,0},{1,1},{2,1},{2,2}};
+//        p_1275.tictactoe(input);
+
+//        Weekly_179 weekly_179=new Weekly_179();
+//        int[] is={2,1,3,5,4};
+//        weekly_179.numTimesAllBlue(is);
+
+//        Random1 random1 = new Random1();
+//        int[][] tt =
+//                {
+//                        {1, 2, 7},
+//                        {3, 6, 7}
+//                };
+//        random1.numBusesToDestination(tt,1,6);
+
+//        Random2 random2 = new Random2();
+//        int[] t = {2, 5, 3, 4, 1};
+//        random2.numTeams(t);
+//        random2.knightProbability(8,30,6,4);
 
 
-        }
-        return 0;
+//        Random3 random3 = new Random3();
+//        int[][] tt =
+//                {
+//                        {1, 2, 3},
+//                        {4, 5, 6},
+//                        {7, 8, 9}
+//                };
+//        random3.findDiagonalOrder(tt);
+
+
+        P_148 p_148=new P_148();
+        List<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(4);
+        list.add(2);
+        list.add(3);
+        list.add(6);
+        list.add(2);
+        List<Integer> sort = p_148.sort(list);
+        d();
+
     }
+
+    public static void d(){
+
+    }
+
+    public static boolean B = true;
 
 
     private static String getDay() {
