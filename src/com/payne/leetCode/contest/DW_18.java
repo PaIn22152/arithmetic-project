@@ -55,9 +55,7 @@ public class DW_18 {
         for(int i=0;i<letters.length;i++){
             letters[i]=(char)(a+i);
         }
-        for(int ){
-
-        }
+       return "";
     }
 
     private boolean isPalindrome(String s) {
