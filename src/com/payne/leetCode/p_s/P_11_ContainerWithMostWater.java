@@ -18,6 +18,7 @@ public class P_11_ContainerWithMostWater {
         return my(height);
     }
 
+    //暴力解法，遍历所有可能
     public int my(int[] height) {
         int result = 0;
         for (int i = 0; i < height.length - 1; i++) {
@@ -27,5 +28,22 @@ public class P_11_ContainerWithMostWater {
             }
         }
         return result;
+    }
+
+
+    //双指针
+    public int maxArea2(int[] height) {
+        int left = 0, right = height.length - 1;
+        int res = 0;
+        while (left < right) {
+            res = Math.max(res, Math.min(height[left], height[right]) * (right - left));
+            if (height[left] < height[right]) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return res;
+
     }
 }
