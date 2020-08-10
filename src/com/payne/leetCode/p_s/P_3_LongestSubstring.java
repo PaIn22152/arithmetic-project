@@ -17,9 +17,27 @@ import java.util.Set;
 public class P_3_LongestSubstring {
 
 
+    public int lengthOfLongestSubstring3(String s) {
+        if (s == null) {
+            return 0;
+        }
+        int left = 0, right = left + 1;
+        int len = 0;
+        while (right <= s.length()) {
+            String sub = s.substring(left, right);
+            if (isValid2(sub)) {
+                right++;
+                len = Math.max(len, sub.length());
+            } else {
+                left++;
+            }
+        }
+        return len;
+    }
+
     // "jxdlnaaij"
     public int lengthOfLongestSubstring2(String s) {
-        if(s==null||s.length()==0){
+        if (s == null || s.length() == 0) {
             return 0;
         }
         int left = 0, right = s.length() - 1;
