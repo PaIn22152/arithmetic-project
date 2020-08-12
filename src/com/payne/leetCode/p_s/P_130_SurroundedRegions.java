@@ -1,7 +1,10 @@
 package com.payne.leetCode.p_s;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
 /**
  * Project    arithmetic-project-git
@@ -40,9 +43,110 @@ public class P_130_SurroundedRegions {
      * cells connected horizontally or vertically.
      */
 
-    public void solve(char[][] board) {
-        my(board);
+    class Point2 {
+        public int x;
+        public int y;
+
+        public Point2(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Point2 point = (Point2) o;
+            return x == point.x &&
+                    y == point.y;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(x, y);
+        }
     }
+
+    public void solve(char[][] board) {
+        if (board.length < 3) {
+            return;
+        }
+        Set<Point2> set = new HashSet<>();
+        List<Point2> last = null;
+        int len = (Math.max(board.length, board[0].length) + 1) / 2;
+        for (int i = 0; i < len; i++) {
+            last = getBorderPoint(board, i, last);
+            if (last.size() == 0) {
+                break;
+            } else {
+                set.addAll(last);
+            }
+        }
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                Point2 p = new Point2(i, j);
+                if (!set.contains(p)) {
+                    board[i][j] = 'X';
+                }
+            }
+        }
+        System.out.println("");
+    }
+
+    private List<Point2> getBorderPoint(char[][] board, int index, List<Point2> last) {
+
+        List<Point2> res = new ArrayList<>();
+        if (last == null) {
+            for (int i = 0; i < board.length; i++) {
+                for (int j = 0; j < board[0].length; j++) {
+                    if (i == index || i == board.length - 1 - index || j == index || j == board[0].length - 1 - index) {
+                        char v = board[i][j];
+                        if (v == 'O') {
+                            res.add(new Point2(i, j));
+                        }
+                    }
+                }
+            }
+        } else {
+            for (int i = 0; i < board.length; i++) {
+                for (int j = 0; j < board[0].length; j++) {
+                    if (i == index || i == board.length - 1 - index
+                            || j == index || j == board[0].length - 1 - index) {
+                        char v = board[i][j];
+                        if (v == 'O' && link(last, i, j)) {
+                            res.add(new Point2(i, j));
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
+    private boolean link(List<Point2> last, int i, int j) {
+        for (Point2 p : last) {
+            if ((p.x == i) && (p.y == j - 1 || p.y == j + 1)) {
+                return true;
+            } else if ((p.y == j) && (p.x == i - 1 || p.x == i + 1)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     * [
+     * ["O","X","O","O","O","O","O","O","O"],
+     * ["O","O","O","X","O","O","O","O","X"],
+     * ["O","X","O","X","O","O","O","O","X"],
+     * ["O","O","O","O","X","O","O","O","O"],
+     * ["X","O","O","O","O","O","O","O","X"],
+     * ["X","X","O","O","X","O","X","O","X"],
+     * ["O","O","O","X","O","O","O","O","O"],
+     * ["O","O","O","X","O","O","O","O","O"],
+     * ["O","O","O","O","O","X","X","O","O"]]
+     */
 
 
 //    String[][] board = {

@@ -1,5 +1,8 @@
 package com.payne.leetCode.p_s;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Project    arithmetic-project-git
  * Path       com.payne.leetCode
@@ -42,4 +45,25 @@ public class P_504_Base7 {
         }
 
     }
+
+
+//    public String convertToBase7_2(int num) {
+//        if (num == 0) {
+//            return "0";
+//        } else if (num > 0) {
+//            List<Integer> list = new ArrayList<>();
+//            while (num / 7 >= 1) {
+//                list.add(num % 7);
+//                num /= 7;
+//            }
+//            StringBuilder sb = new StringBuilder();
+//            for (int i = list.size(); i >= 0; i--) {
+//                sb.append(i + "");
+//            }
+//            return sb.toString();
+//        } else {
+//            return "-" + convertToBase7_2(-num);
+//        }
+//    }
+
 }

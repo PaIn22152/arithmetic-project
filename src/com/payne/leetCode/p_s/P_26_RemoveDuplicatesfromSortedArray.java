@@ -10,40 +10,77 @@ package com.payne.leetCode.p_s;
 
 public class P_26_RemoveDuplicatesfromSortedArray {
     /**
-     * https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+     * 给定一个排序数组，你需要在 原地 删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+     * 不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
      * <p>
-     * Given a sorted array nums, remove the duplicates in-place such that each element
-     * appear only once and return the new length.
+     *  
+     * 示例 1:
+     * 给定数组 nums = [1,1,2],
+     * 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。
+     * 你不需要考虑数组中超出新长度后面的元素。
      * <p>
-     * Do not allocate extra space for another array, you must do this by modifying
-     * the input array in-place with O(1) extra memory.
+     * 示例 2:
+     * 给定 nums = [0,0,1,1,1,2,2,3,3,4],
+     * 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。
+     * 你不需要考虑数组中超出新长度后面的元素。
+     *  
+     * 说明:
+     * 为什么返回数值是整数，但输出的答案是数组呢?
+     * 请注意，输入数组是以「引用」方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
+     * 你可以想象内部操作如下:
+     * // nums 是以“引用”方式传递的。也就是说，不对实参做任何拷贝
+     * int len = removeDuplicates(nums);
      * <p>
-     * Example 1:
-     * Given nums = [1,1,2],
-     * Your function should return length = 2, with the first two elements of
-     * nums being 1 and 2 respectively.
-     * It doesn't matter what you leave beyond the returned length.
-     * [0,0,1,1,1,2,2,3,3,4]
+     * // 在函数里修改输入数组对于调用者是可见的。
+     * // 根据你的函数返回的长度, 它会打印出数组中该长度范围内的所有元素。
+     * for (int i = 0; i < len; i++) {
+     *     print(nums[i]);
+     * }
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
      */
 
-
+//  [0,0,0,1,1,1,2,2,3,3,4]
     public int removeDuplicates(int[] nums) {
-        return my(nums);
-    }
-
-    public int my(int[] nums) {
-        int len = nums.length;
-        int rep = 0;
-        for (int i = 1; i < len; i++) {
-            if (nums[i] == nums[i - 1]) {
-                if (i != len - 1) {
-                    nums[i] = nums[i + 1];
-                    nums[i+1]=Integer.MAX_VALUE;
-                }
-                rep++;
+        if (nums.length <= 1) {
+            return nums.length;
+        }
+        int last = nums[0];
+        int repeat = 0;
+        int p = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == last) {
+                repeat++;
+            } else {
+                last = nums[i];
+                p++;
+            }
+            if (p + repeat < nums.length) {
+                nums[p] = nums[p + repeat];
             }
         }
-        return len - rep;
+        return nums.length - repeat;
+    }
+
+
+    /**
+     * 快慢双指针
+     */
+    public int removeDuplicates2(int[] nums) {
+        if (nums.length <= 1) {
+            return nums.length;
+        }
+        int left = 0, right = 1;
+        while (right < nums.length) {
+            if (nums[left] == nums[right]) {
+                right++;
+            } else {
+nums[left]=nums[right];
+            }
+        }
+        return nums.length - (right - left) + 1;
     }
 
 

@@ -2,6 +2,9 @@ package com.payne;
 
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.daily.D_696;
+import com.payne.leetCode.p_s.P_130_SurroundedRegions;
+import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
+import com.payne.leetCode.p_s.P_763;
 import com.payne.leetCode.solutions.P_16;
 import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
@@ -269,25 +272,55 @@ public class Main {
 //        list.add(2);
 //        List<Integer> sort = p_148.sort(list);
 
-        D_696 d_696 = new D_696();
-//        int i=d_696.countBinarySubstrings(s);
-        int i = d_696.countBinarySubstrings("001100");
-        d();
+//        D_696 d_696 = new D_696();
+////        int i=d_696.countBinarySubstrings(s);
+//        int i = d_696.countBinarySubstrings("001100");
+//        d();
+//
+//        List<Integer> list = new ArrayList<>();
+//        list.add(0);
+//        list.add(1);
+//        list.add(2);
+//        list.add(2);
+//        List<Integer> list1 = list.subList(0, 3);
+//        d();
+//        List<Integer> list2 = list.subList(1, 2);
+//        d();
+//
+//        boolean b1 = list.get(2) == list.get(3);
+//        d();
+//        boolean b2 = list.get(2).equals(list.get(3));
+//        d();
 
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        list.add(1);
-        list.add(2);
-        list.add(2);
-        List<Integer> list1 = list.subList(0, 3);
-        d();
-        List<Integer> list2 = list.subList(1, 2);
-        d();
 
-        boolean b1 = list.get(2) == list.get(3);
-        d();
-        boolean b2 = list.get(2).equals(list.get(3));
-        d();
+        P_130_SurroundedRegions p130 = new P_130_SurroundedRegions();
+        char[][] cc={
+                {'O','X','O','O','O','O','O','O','O'},
+                {'O','O','O','X','O','O','O','O','X'},
+                {'O','X','O','X','O','O','O','O','X'},
+                {'O','O','O','O','X','O','O','O','O'},
+                {'X','O','O','O','O','O','O','O','X'},
+                {'X','X','O','O','X','O','X','O','X'},
+                {'O','O','O','X','O','O','O','O','O'},
+                {'O','O','O','X','O','O','O','O','O'},
+                {'O','O','O','O','O','X','X','O','O'}};
+//        char[][] cc={{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
+//        char[][] cc = {
+//                {'X', 'O', 'X', 'O', 'X', 'O'},
+//                {'O', 'X', 'O', 'X', 'O', 'X'},
+//                {'X', 'O', 'X', 'O', 'X', 'O'},
+//                {'O', 'X', 'O', 'X', 'O', 'X'}};
+//        p130.solve(cc);
+//        d();
+
+
+//        P_763 p_763=new P_763();
+//        p_763.partitionLabels3("ababcbacadefegdehijhklij");
+
+
+        P_26_RemoveDuplicatesfromSortedArray p26=new P_26_RemoveDuplicatesfromSortedArray();
+        int[] i={0,0,0,1,1,1,2,2,3,3,4};
+        p26.removeDuplicates(i);
 
     }
 
