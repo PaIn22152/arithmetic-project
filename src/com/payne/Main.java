@@ -1,6 +1,7 @@
 package com.payne;
 
 import com.payne.leetCode.contest.DW_18;
+import com.payne.leetCode.daily.D_43;
 import com.payne.leetCode.daily.D_696;
 import com.payne.leetCode.p_s.P_130_SurroundedRegions;
 import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
@@ -294,16 +295,16 @@ public class Main {
 
 
         P_130_SurroundedRegions p130 = new P_130_SurroundedRegions();
-        char[][] cc={
-                {'O','X','O','O','O','O','O','O','O'},
-                {'O','O','O','X','O','O','O','O','X'},
-                {'O','X','O','X','O','O','O','O','X'},
-                {'O','O','O','O','X','O','O','O','O'},
-                {'X','O','O','O','O','O','O','O','X'},
-                {'X','X','O','O','X','O','X','O','X'},
-                {'O','O','O','X','O','O','O','O','O'},
-                {'O','O','O','X','O','O','O','O','O'},
-                {'O','O','O','O','O','X','X','O','O'}};
+        char[][] cc = {
+                {'O', 'X', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+                {'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'X'},
+                {'O', 'X', 'O', 'X', 'O', 'O', 'O', 'O', 'X'},
+                {'O', 'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O'},
+                {'X', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'X'},
+                {'X', 'X', 'O', 'O', 'X', 'O', 'X', 'O', 'X'},
+                {'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'O'},
+                {'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'O'},
+                {'O', 'O', 'O', 'O', 'O', 'X', 'X', 'O', 'O'}};
 //        char[][] cc={{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
 //        char[][] cc = {
 //                {'X', 'O', 'X', 'O', 'X', 'O'},
@@ -318,10 +319,17 @@ public class Main {
 //        p_763.partitionLabels3("ababcbacadefegdehijhklij");
 
 
-        P_26_RemoveDuplicatesfromSortedArray p26=new P_26_RemoveDuplicatesfromSortedArray();
-        int[] i={0,0,0,1,1,1,2,2,3,3,4};
-        p26.removeDuplicates(i);
+//        P_26_RemoveDuplicatesfromSortedArray p26=new P_26_RemoveDuplicatesfromSortedArray();
+//        int[] i={0,0,0,1,1,1,2,2,3,3,4};
+//        p26.removeDuplicates(i);
 
+
+        D_43 d_43 = new D_43();
+        String s1 = "81234134134523452344523452345234523345234523445234523452334134523452344523452345234523452345341345234523445234523452345232";
+        String s2 = "812341345234523445234523452345234544523452345234523345234523445234544523452345234523345234523445234523452334134523452344523452345234234523341345234523445234523452342";
+//        String sss = d_43.multiply(s1, s2);
+        String sss = d_43.multiply3("32", "123");
+        d();
     }
 
     public static void d() {
