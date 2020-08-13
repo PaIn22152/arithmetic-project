@@ -1,11 +1,13 @@
 package com.payne;
 
 import com.payne.leetCode.contest.DW_18;
+import com.payne.leetCode.contest.Weekly_197;
 import com.payne.leetCode.daily.D_43;
 import com.payne.leetCode.daily.D_696;
 import com.payne.leetCode.p_s.P_130_SurroundedRegions;
 import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
 import com.payne.leetCode.p_s.P_763;
+import com.payne.leetCode.p_s.P_805;
 import com.payne.leetCode.solutions.P_16;
 import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
@@ -324,11 +326,18 @@ public class Main {
 //        p26.removeDuplicates(i);
 
 
-        D_43 d_43 = new D_43();
-        String s1 = "81234134134523452344523452345234523345234523445234523452334134523452344523452345234523452345341345234523445234523452345232";
-        String s2 = "812341345234523445234523452345234544523452345234523345234523445234544523452345234523345234523445234523452334134523452344523452345234234523341345234523445234523452342";
-//        String sss = d_43.multiply(s1, s2);
-        String sss = d_43.multiply3("32", "123");
+//        D_43 d_43 = new D_43();
+//        String s1 = "81234134134523452344523452345234523345234523445234523452334134523452344523452345234523452345341345234523445234523452345232";
+//        String s2 = "812341345234523445234523452345234544523452345234523345234523445234544523452345234523345234523445234523452334134523452344523452345234234523341345234523445234523452342";
+////        String sss = d_43.multiply(s1, s2);
+//        String sss = d_43.multiply3("32", "123");
+
+//        P_805 p_805=new P_805();
+//        int[] a={10,29,13,53,33,48,76,70,5,5};
+//        boolean b=p_805.splitArraySameAverage(a);
+
+        Weekly_197 weekly_197=new Weekly_197();
+        int i=weekly_197.numSub("0110111");
         d();
     }
 
