@@ -21,7 +21,7 @@ public class S_1_StraightInsertionSort {
      * random array.
      * len = 90000
      * time = 1*1000 ms
-     * */
+     */
     public static int[] sort(int array[], int count) {
         int[] result = new int[array.length];
         result[0] = array[0];
@@ -43,6 +43,21 @@ public class S_1_StraightInsertionSort {
             }
         }
         return result;
+    }
+
+
+    public static int[] sort(int array[]) {
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j >= 0; j--) {
+                if (array[j] >= array[i]) {
+
+                } else {
+
+                }
+            }
+        }
+        return array;
     }
 
     public static int[] insertSort(int array[], int count) {
