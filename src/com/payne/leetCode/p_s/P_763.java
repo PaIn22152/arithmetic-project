@@ -21,7 +21,7 @@ public class P_763 {
      * 字符串 S 由小写字母组成。我们要把这个字符串划分为尽可能多的片段，
      * 同一个字母只会出现在其中的一个片段。
      * 返回一个表示每个字符串片段的长度的列表。
-     * <p>
+     * <p_old>
      * 示例 1：
      * 输入：S = "ababcbaca defegde hijhklij"
      * 输出：[9,7,8]
@@ -29,11 +29,11 @@ public class P_763 {
      * 划分结果为 "ababcbaca", "defegde", "hijhklij"。
      * 每个字母最多出现在一个片段中。
      * 像 "ababcbacadefegde", "hijhklij" 的划分是错误的，因为划分的片段数较少。
-     * <p>
+     * <p_old>
      * 提示：
      * S的长度在[1, 500]之间。
      * S只包含小写字母 'a' 到 'z' 。
-     * <p>
+     * <p_old>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/partition-labels
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
@@ -102,7 +102,7 @@ public class P_763 {
     /**
      * 执行用时：5 ms
      * 内存消耗：38.1 MB
-     * <p>
+     * <p_old>
      * 遍历一遍字符串，找到每个char在s中最靠右的位置并记录，
      * 因为s全是由小写字母组成，所以可以用int[26]，节省空间和时间
      * 然后再从left=0遍历s，找到left位置char的最右位置right，
@@ -138,7 +138,7 @@ public class P_763 {
 
     /**
      * 官方代码
-     * <p>
+     * <p_old>
      * 执行用时：5 ms, 在所有 Java 提交中击败了78.37%的用户
      * 内存消耗：38.2 MB, 在所有 Java 提交中击败了77.47%的用户
      */

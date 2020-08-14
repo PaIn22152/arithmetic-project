@@ -12,24 +12,24 @@ public class P_953_VerifyingAnAlienDictionary {
 
     /**
      * https://leetcode.com/contest/weekly-contest-114/problems/verifying-an-alien-dictionary/
-     * <p>
+     * <p_old>
      * In an alien language, surprisingly they also use english lowercase letters,
      * but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.
-     * <p>
+     * <p_old>
      * Given a sequence of words written in the alien language, and the order of the alphabet,
      * return true if and only if the given words are sorted lexicographicaly in this alien language.
-     * <p>
+     * <p_old>
      * Example 1:
      * Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
      * Output: true
      * Explanation: As 'h' comes before 'l' in this language, then the sequence is sorted.
      * Example 2:
-     * <p>
+     * <p_old>
      * Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"
      * Output: false
      * Explanation: As 'd' comes after 'l' in this language, then words[0] > words[1],
      * hence the sequence is unsorted.
-     * <p>
+     * <p_old>
      * Note:
      * 1 <= words.length <= 100
      * 1 <= words[i].length <= 20

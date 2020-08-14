@@ -17,33 +17,26 @@ public class P_88 {
      */
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int pos = 0;
-        int i = 0;
-        while (i <= n) {
-            if(pos<nums1.length){
-                if (nums1[pos] > nums2[i]) {
-                    insert(nums1, pos, nums2[i]);
-                    pos++;
-                    i++;
+        for (int i = 0; i < n; i++) {
+            boolean move = false;
+            int last = 0;
+            for (int j = 0; j < m + i + 1; j++) {
+                if (move) {
+                    int tem = nums1[j];
+                    nums1[j] = last;
+                    last = tem;
+                } else if (nums1[j] > nums2[i]) {
+                    last = nums1[j];
+                    nums1[j] = nums2[i];
+                    move = true;
                 }
-                pos++;
-            }else {
-                nums1[pos-1]=nums2[n-1];
-                break;
             }
-
+            if (!move) {
+                nums1[m + i] = nums2[i];
+            }
         }
-        PrintHelper.println(nums1);
 
     }
 
-    private void insert(int[] nums, int pos, int num) {
-        for (int i = nums.length - 1; i >= 0; i--) {
-            if (i > pos) {
-                nums[i] = nums[i - 1];
-            }
-        }
-        nums[pos] = num;
-    }
 
 }

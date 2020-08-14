@@ -12,22 +12,22 @@ public class P_6_ZigZagConversion {
 
     /**
      * https://leetcode.com/problems/zigzag-conversion/description/
-     * <p>
+     * <p_old>
      * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows
      * like this: (you may want to display this pattern in a fixed font for better legibility)
-     * <p>
+     * <p_old>
      * P   A   H   N
      * A P L S I I G
      * Y   I   R
      * And then read line by line: "PAHNAPLSIIGYIR"
-     * <p>
+     * <p_old>
      * P     I    N
      * A   L S  I G
      * Y A   H R
      * P     I
-     * <p>
-     * <p>
-     * <p>
+     * <p_old>
+     * <p_old>
+     * <p_old>
      * P       I      N
      * A     L S    I G
      * Y   A   H   R

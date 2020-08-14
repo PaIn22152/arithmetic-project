@@ -14,17 +14,17 @@ public class P_7_ReverseInteger {
      * 7. Reverse Integer
      * DescriptionHintsSubmissionsDiscussSolution
      * Given a 32-bit signed integer, reverse digits of an integer.
-     * <p>
+     * <p_old>
      * Example 1:
-     * <p>
+     * <p_old>
      * Input: 123
      * Output: 321
      * Example 2:
-     * <p>
+     * <p_old>
      * Input: -123
      * Output: -321
      * Example 3:
-     * <p>
+     * <p_old>
      * Input: 120
      * Output: 21
      * Note:

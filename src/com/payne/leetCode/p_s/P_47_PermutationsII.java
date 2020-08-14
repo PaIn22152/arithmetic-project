@@ -16,7 +16,7 @@ import java.util.Map;
 public class P_47_PermutationsII {
     /**
      * https://leetcode.com/problems/permutations-ii/description/
-     * <p>
+     * <p_old>
      * Given a collection of numbers that might contain duplicates, return all possible unique permutations.
      * Example:
      * Input: [1,1,2]
@@ -26,7 +26,7 @@ public class P_47_PermutationsII {
      * [1,2,1],
      * [2,1,1]
      * ]
-     * <p>
+     * <p_old>
      * O(n!)
      * 分治法
      */

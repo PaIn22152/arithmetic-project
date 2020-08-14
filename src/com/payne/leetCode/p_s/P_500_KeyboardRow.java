@@ -40,7 +40,7 @@ public class P_500_KeyboardRow {
         mapHigh.put("O", "O");
         mapHigh.put("o", "o");
         mapHigh.put("P", "P");
-        mapHigh.put("p", "p");
+        mapHigh.put("p_old", "p_old");
         HashMap<String, String> mapMid = new HashMap<>();
         mapMid.put("a", "a");
         mapMid.put("s", "s");

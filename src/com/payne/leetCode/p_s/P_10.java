@@ -16,15 +16,15 @@ import java.util.Map;
 public class P_10 {
     /**
      * https://leetcode.com/problems/regular-expression-matching/
-     * <p>
-     * Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
+     * <p_old>
+     * Given an input string (s) and a pattern (p_old), implement regular expression matching with support for '.' and '*'.
      * '.' Matches any single character.
      * '*' Matches zero or more of the preceding element.
      * The matching should cover the entire input string (not partial).
-     * <p>
+     * <p_old>
      * Note:
      * s could be empty and contains only lowercase letters a-z.
-     * p could be empty and contains only lowercase letters a-z, and characters like . or *.
+     * p_old could be empty and contains only lowercase letters a-z, and characters like . or *.
      */
 
     private static final char DOT = '.';
@@ -35,7 +35,7 @@ public class P_10 {
     private Map<Integer, Character> asteriskMap = new HashMap<>();
 
     //s could be empty and contains only lowercase letters a-z.
-    //p could be empty and contains only lowercase letters a-z, and characters like . or *.
+    //p_old could be empty and contains only lowercase letters a-z, and characters like . or *.
     public boolean isMatch(String s, String p) {
         initMap(p);
         PrintHelper.println(asteriskMap);
@@ -46,7 +46,7 @@ public class P_10 {
 
 
     //s could be empty and contains only lowercase letters a-z.
-    //p could be empty and contains only lowercase letters a-z, and characters like ..
+    //p_old could be empty and contains only lowercase letters a-z, and characters like ..
     private boolean isMatchDot(String s, String p) {
         if (s.length() != p.length()) {
             return false;

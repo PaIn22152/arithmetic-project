@@ -11,15 +11,15 @@ package com.payne.leetCode.p_s;
 public class P_16_3SumClosest {
     /**
      * https://leetcode.com/problems/3sum-closest/description/
-     * <p>
+     * <p_old>
      * Given an array nums of n integers and an integer target,
      * find three integers in nums such that the sum is closest to target.
      * Return the sum of the three integers. You may assume that each input would have exactly one solution.
-     * <p>
+     * <p_old>
      * Example:
-     * <p>
+     * <p_old>
      * Given array nums = [-1, 2, 1, -4], and target = 1.
-     * <p>
+     * <p_old>
      * The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
      */
 

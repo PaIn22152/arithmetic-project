@@ -11,21 +11,21 @@ package com.payne.leetCode.p_s;
 public class P_479LargestPalindromeProduct {
     /**
      * https://leetcode.com/problems/largest-palindrome-product/description/
-     * <p>
+     * <p_old>
      * Find the largest palindrome made from the product of two n-digit numbers.
-     * <p>
+     * <p_old>
      * Since the result could be very large, you should return the largest palindrome mod 1337.
-     * <p>
+     * <p_old>
      * Example:
-     * <p>
+     * <p_old>
      * Input: 2
-     * <p>
+     * <p_old>
      * Output: 987
-     * <p>
+     * <p_old>
      * Explanation: 99 x 91 = 9009, 9009 % 1337 = 987
-     * <p>
+     * <p_old>
      * Note:
-     * <p>
+     * <p_old>
      * The range of n is [1,8].
      */
 

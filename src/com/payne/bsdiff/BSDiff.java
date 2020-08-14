@@ -274,7 +274,7 @@ public class BSDiff {
 
     /**
      * Compare two byte array segments to see if they are equal
-     * <p>
+     * <p_old>
      * return 1 if s1[s1offset...s1Size] is bigger than s2[s2offset...s2Size] otherwise return -1
      */
     private static int memcmp(byte[] s1, int s1Size, int s1offset, byte[] s2, int s2Size, int s2offset) {

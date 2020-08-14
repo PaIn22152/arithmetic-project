@@ -12,7 +12,7 @@ public class P_955_DeleteColumnsToMakeSortedII {
 
     /**
      * https://leetcode.com/contest/weekly-contest-114/problems/delete-columns-to-make-sorted-ii/
-     * <p>
+     * <p_old>
      * We are given an array A of N lowercase letter strings, all of the same length.
      * Now, we may choose any set of deletion indices, and for each string,
      * we delete all the characters in those indices.
@@ -21,7 +21,7 @@ public class P_955_DeleteColumnsToMakeSortedII {
      * Suppose we chose a set of deletion indices D such that after deletions,
      * the final array has its elements in lexicographic order (A[0] <= A[1] <= A[2] ... <= A[A.length - 1]).
      * Return the minimum possible value of D.length.
-     * <p>
+     * <p_old>
      * Example 1:
      * Input: ["ca","bb","ac"]
      * Output: 1

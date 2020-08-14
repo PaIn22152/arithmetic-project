@@ -14,29 +14,29 @@ import java.util.Map;
 public class P_859_BuddyStrings {
     /**
      * https://leetcode.com/problems/buddy-strings/description/
-     * <p>
+     * <p_old>
      * Given two strings A and B of lowercase letters,
      * return true if and only if we can swap two letters in A so that the result equals B.
      * Example 1:
      * Input: A = "ab", B = "ba"
      * Output: true
-     * <p>
+     * <p_old>
      * Example 2:
      * Input: A = "ab", B = "ab"
      * Output: false
-     * <p>
+     * <p_old>
      * Example 3:
      * Input: A = "aa", B = "aa"
      * Output: true
-     * <p>
+     * <p_old>
      * Example 4:
      * Input: A = "aaaaaaabc", B = "aaaaaaacb"
      * Output: true
-     * <p>
+     * <p_old>
      * Example 5:
      * Input: A = "", B = "aa"
      * Output: false
-     * <p>
+     * <p_old>
      * Note:
      * 0 <= A.length <= 20000
      * 0 <= B.length <= 20000

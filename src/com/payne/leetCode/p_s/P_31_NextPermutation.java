@@ -15,13 +15,13 @@ public class P_31_NextPermutation {
     /**
      * https://leetcode.com/problems/next-permutation/description/
      * Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
-     * <p>
+     * <p_old>
      * If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
-     * <p>
+     * <p_old>
      * The replacement must be in-place and use only constant extra memory.
-     * <p>
+     * <p_old>
      * Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
-     * <p>
+     * <p_old>
      * 1,2,3 → 1,3,2
      * 3,2,1 → 1,2,3
      * 1,1,5 → 1,5,1

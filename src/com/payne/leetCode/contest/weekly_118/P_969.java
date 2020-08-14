@@ -16,21 +16,21 @@ public class P_969 {
 
     /**
      * https://leetcode.com/contest/weekly-contest-118/problems/pancake-sorting/
-     * <p>
+     * <p_old>
      * Given an array A, we can perform a pancake flip: We choose some positive
      * integer k <= A.length, then reverse the order of the first k elements of A.
      * We want to perform zero or more pancake flips (doing them one after another in succession)
      * to sort the array A.
-     * <p>
+     * <p_old>
      * Return the k-values corresponding to a sequence of pancake flips that sort A.
      * Any valid answer that sorts the array within 10 * A.length flips will be judged as correct.
-     * <p>
+     * <p_old>
      * Note:
      * 1 <= A.length <= 100
      * A[i] is a permutation of [1, 2, ..., A.length]
-     * <p>
+     * <p_old>
      * Example 1:
-     * <p>
+     * <p_old>
      * Input: [3,2,4,1]
      * Output: [4,2,4,3]
      * Explanation:
@@ -40,7 +40,7 @@ public class P_969 {
      * After 2nd flip (k=2): A = [4, 1, 2, 3]
      * After 3rd flip (k=4): A = [3, 2, 1, 4]
      * After 4th flip (k=3): A = [1, 2, 3, 4], which is sorted.
-     * <p>
+     * <p_old>
      * 3241
      * 3
      * 4231

@@ -8,7 +8,7 @@ package com.payne.leetCode.p_s;
  * '*' Matches any sequence of characters (including the empty sequence).
  * The matching should cover the entire input string (not partial).
  * The function prototype should be:
- * bool isMatch(const char *s, const char *p)
+ * bool isMatch(const char *s, const char *p_old)
  * Some examples:
  * isMatch("aa","a") → false
  * isMatch("aa","aa") → true
@@ -21,9 +21,9 @@ package com.payne.leetCode.p_s;
 public class P_44_WildcardMatching {
 
     public boolean isMatch(String s, String p) {
-        //return my(s, p);
-        //return singleWildcard(s, p);
-        //return oneSequenceWildcard(s, p);
+        //return my(s, p_old);
+        //return singleWildcard(s, p_old);
+        //return oneSequenceWildcard(s, p_old);
         return sequenceWildcard(s, p);
         //return true;
     }

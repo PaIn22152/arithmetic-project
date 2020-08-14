@@ -14,7 +14,7 @@ import java.util.List;
 public class P_504_Base7 {
     /**
      * Given an integer, return its base 7 string representation.
-     * <p>
+     * <p_old>
      * Example 1:
      * Input: 100
      * Output: "202"

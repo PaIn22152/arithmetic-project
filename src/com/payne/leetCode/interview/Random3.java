@@ -14,7 +14,7 @@ public class Random3 {
     /**
      * 给定一个含有 M x N 个元素的矩阵（M 行，N 列），
      * 请以对角线遍历的顺序返回这个矩阵中的所有元素，对角线遍历如下图所示。
-     * <p>
+     * <p_old>
      * 示例:
      * 输入:
      * [
@@ -23,7 +23,7 @@ public class Random3 {
      * [ 7, 8, 9 ]
      * ]
      * 输出:  [1,2,4,7,5,3,6,8,9]
-     * <p>
+     * <p_old>
      * 说明:
      * 给定矩阵中的元素总数不会超过 100000 。
      */
@@ -74,28 +74,28 @@ public class Random3 {
      * 注意：要想发出蛙鸣 "croak"，青蛙必须 依序 输出 ‘c’, ’r’, ’o’, ’a’, ’k’ 这 5 个字母。
      * 如果没有输出全部五个字母，那么它就不会发出声音。
      * 如果字符串 croakOfFrogs 不是由若干有效的 "croak" 字符混合而成，请返回 -1 。
-     * <p>
+     * <p_old>
      * 示例 1：
      * 输入：croakOfFrogs = "croakcroak"
      * 输出：1
      * 解释：一只青蛙 “呱呱” 两次
-     * <p>
+     * <p_old>
      * 示例 2：
      * 输入：croakOfFrogs = "crcoakroak"
      * 输出：2
      * 解释：最少需要两只青蛙，“呱呱” 声用黑体标注
      * 第一只青蛙 "crcoakroak"
      * 第二只青蛙 "crcoakroak"
-     * <p>
+     * <p_old>
      * 示例 3：
      * 输入：croakOfFrogs = "croakcrook"
      * 输出：-1
      * 解释：给出的字符串不是 "croak" 的有效组合。
-     * <p>
+     * <p_old>
      * 示例 4：
      * 输入：croakOfFrogs = "croakcroa"
      * 输出：-1
-     * <p>
+     * <p_old>
      * 提示：
      * 1 <= croakOfFrogs.length <= 10^5
      * 字符串中的字符只有 'c', 'r', 'o', 'a' 或者 'k'
@@ -108,7 +108,7 @@ public class Random3 {
 
     /**
      * 给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。
-     * <p>
+     * <p_old>
      * 示例 1:
      * 输入: 1->2->3->4->5->NULL, k = 2
      * 输出: 4->5->1->2->3->NULL
@@ -116,7 +116,7 @@ public class Random3 {
      * 向右旋转 1 步: 5->1->2->3->4->NULL
      * 向右旋转 2 步: 4->5->1->2->3->NULL
      * 示例 2:
-     * <p>
+     * <p_old>
      * 输入: 0->1->2->NULL, k = 4
      * 输出: 2->0->1->NULL
      * 解释:
