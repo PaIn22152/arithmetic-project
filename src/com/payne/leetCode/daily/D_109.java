@@ -131,4 +131,38 @@ class D_109 {
         return slow;
     }
 
+
+
+    //解题思路和代码和我类似，不同的是找前链表，效率比我的方式高
+    /*
+    执行用时：0 ms, 在所有 Java 提交中击败了100.00%的用户
+    内存消耗：41 MB, 在所有 Java 提交中击败了46.77%的用户
+    * */
+    public TreeNode sortedListToBST3(ListNode head) {
+        //边界条件的判断
+        if (head == null)
+            return null;
+        if (head.next == null)
+            return new TreeNode(head.val);
+        //这里通过快慢指针找到链表的中间结点slow，pre就是中间
+        //结点slow的前一个结点
+        ListNode slow = head, fast = head, pre = null;
+        while (fast != null && fast.next != null) {
+            pre = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        //链表断开为两部分，一部分是node的左子节点，一部分是node
+        //的右子节点
+        pre.next = null;
+        //node就是当前节点
+        TreeNode node = new TreeNode(slow.val);
+        //从head节点到pre节点是node左子树的节点
+        node.left = sortedListToBST3(head);
+        //从slow.next到链表的末尾是node的右子树的结点
+        node.right = sortedListToBST3(slow.next);
+        return node;
+    }
+
+
 }
