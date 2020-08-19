@@ -3,6 +3,7 @@ package com.payne;
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.contest.Weekly_197;
 import com.payne.leetCode.daily.D_43;
+import com.payne.leetCode.daily.D_647;
 import com.payne.leetCode.daily.D_696;
 import com.payne.leetCode.p_s.P_130_SurroundedRegions;
 import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
@@ -336,8 +337,13 @@ public class Main {
 //        int[] a={10,29,13,53,33,48,76,70,5,5};
 //        boolean b=p_805.splitArraySameAverage(a);
 
-        Weekly_197 weekly_197=new Weekly_197();
-        int i=weekly_197.numSub("0110111");
+//        Weekly_197 weekly_197=new Weekly_197();
+//        int i=weekly_197.numSub("0110111");
+
+        D_647 d_647=new D_647();
+        int i=d_647.countSubstrings3("abcccaa");//11
+//        int i=d_647.countSubstrings3("cabbaf");//8
+//        int i=d_647.countSubstrings2("abc");
         d();
     }
 

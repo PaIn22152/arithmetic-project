@@ -133,8 +133,8 @@ public class Weekly_197 {
     /**
      https://leetcode-cn.com/problems/path-with-maximum-probability/
      * */
-    public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
-
-    }
+//    public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
+//
+//    }
 
 }
