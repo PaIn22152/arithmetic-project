@@ -3,6 +3,7 @@ package com.payne;
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.contest.Weekly_197;
 import com.payne.leetCode.daily.D_43;
+import com.payne.leetCode.daily.D_529;
 import com.payne.leetCode.daily.D_647;
 import com.payne.leetCode.daily.D_696;
 import com.payne.leetCode.p_s.P_130_SurroundedRegions;
@@ -340,10 +341,23 @@ public class Main {
 //        Weekly_197 weekly_197=new Weekly_197();
 //        int i=weekly_197.numSub("0110111");
 
-        D_647 d_647=new D_647();
-        int i=d_647.countSubstrings3("abcccaa");//11
+//        D_647 d_647=new D_647();
+//        int i=d_647.countSubstrings3("abcccaa");//11
 //        int i=d_647.countSubstrings3("cabbaf");//8
 //        int i=d_647.countSubstrings2("abc");
+
+
+        D_529 d_529 = new D_529();
+        char[][] b = {
+                {'E', 'E', 'E', 'E', 'E'},
+                {'E', 'E', 'M', 'E', 'E'},
+                {'E', 'E', 'E', 'E', 'E'},
+                {'E', 'E', 'E', 'E', 'E'}};
+//        char[][] b = {
+//                {'1', '2', '3',},
+//                {'4', '5', '6',}};
+        int[] p = {3, 0};
+        d_529.updateBoard(b, p);
         d();
     }
 
