@@ -47,12 +47,12 @@ class D_111 {
             return 1;
         }
         if (root.left == null) {
-            return 1 + minDepth(root.right);
+            return 1 + minDepth2(root.right);
         }
         if (root.right == null) {
-            return 1 + minDepth(root.left);
+            return 1 + minDepth2(root.left);
         }
-        return 1 + Math.min(minDepth(root.left), minDepth(root.right));
+        return 1 + Math.min(minDepth2(root.left), minDepth2(root.right));
     }
 
 
