@@ -2,10 +2,7 @@ package com.payne;
 
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.contest.Weekly_197;
-import com.payne.leetCode.daily.D_43;
-import com.payne.leetCode.daily.D_529;
-import com.payne.leetCode.daily.D_647;
-import com.payne.leetCode.daily.D_696;
+import com.payne.leetCode.daily.*;
 import com.payne.leetCode.p_s.P_130_SurroundedRegions;
 import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
 import com.payne.leetCode.p_s.P_763;
@@ -347,17 +344,25 @@ public class Main {
 //        int i=d_647.countSubstrings2("abc");
 
 
-        D_529 d_529 = new D_529();
-        char[][] b = {
-                {'E', 'E', 'E', 'E', 'E'},
-                {'E', 'E', 'M', 'E', 'E'},
-                {'E', 'E', 'E', 'E', 'E'},
-                {'E', 'E', 'E', 'E', 'E'}};
+//        D_529 d_529 = new D_529();
 //        char[][] b = {
-//                {'1', '2', '3',},
-//                {'4', '5', '6',}};
-        int[] p = {3, 0};
-        d_529.updateBoard(b, p);
+//                {'E', 'E', 'E', 'E', 'E'},
+//                {'E', 'E', 'M', 'E', 'E'},
+//                {'E', 'E', 'E', 'E', 'E'},
+//                {'E', 'E', 'E', 'E', 'E'}};
+////        char[][] b = {
+////                {'1', '2', '3',},
+////                {'4', '5', '6',}};
+//        int[] p = {3, 0};
+//        d_529.updateBoard(b, p);
+
+//        D_679 d_679 = new D_679();
+//
+////        boolean b=d_679.judgePoint24(new int[]{1, 2, 1, 2});
+//        boolean b=d_679.judgePoint24(new int[]{1, 3, 4, 6});
+
+        D_201 d_201=new D_201();
+        int i=d_201.rangeBitwiseAnd(2147483646,2147483647);
         d();
     }
 
