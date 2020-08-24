@@ -7,6 +7,7 @@ import com.payne.leetCode.p_s.P_130_SurroundedRegions;
 import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
 import com.payne.leetCode.p_s.P_763;
 import com.payne.leetCode.p_s.P_805;
+import com.payne.leetCode.p_s.P_array;
 import com.payne.leetCode.solutions.P_16;
 import com.payne.leetCode.contest.Weekly_179;
 import com.payne.leetCode.contest.weekly_165.P_1275;
@@ -361,8 +362,12 @@ public class Main {
 ////        boolean b=d_679.judgePoint24(new int[]{1, 2, 1, 2});
 //        boolean b=d_679.judgePoint24(new int[]{1, 3, 4, 6});
 
-        D_201 d_201=new D_201();
-        int i=d_201.rangeBitwiseAnd(2147483646,2147483647);
+//        D_201 d_201=new D_201();
+//        int i=d_201.rangeBitwiseAnd(2147483646,2147483647);
+
+        P_array p_array=new P_array();
+        int i=p_array.pivotIndex(new int[]{1,7,3,6,5,6});
+
         d();
     }
 

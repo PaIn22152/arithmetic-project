@@ -46,8 +46,6 @@ class P_234 {
 //        }
 //
 //    }
-
-
     public boolean isPalindrome2(ListNode head) {
         List<Integer> list = new ArrayList<>();
         ListNode tem = head;
@@ -62,4 +60,7 @@ class P_234 {
         }
         return true;
     }
+
+
+
 }
