@@ -368,8 +368,12 @@ public class Main {
 //        P_array p_array=new P_array();
 //        int i=p_array.pivotIndex(new int[]{1,7,3,6,5,6});
 
-        D_491 d_491=new D_491();
-        d_491.findSubsequences(new int[]{1,3,5,7});
+//        D_491 d_491=new D_491();
+//        d_491.findSubsequences(new int[]{1,3,5,7});
+
+        D_17 d_17=new D_17();
+//        d_17.letterCombinations("2379");
+        d_17.letterCombinations("23");
 
         d();
     }
