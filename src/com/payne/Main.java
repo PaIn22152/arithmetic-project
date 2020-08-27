@@ -371,10 +371,40 @@ public class Main {
 //        D_491 d_491=new D_491();
 //        d_491.findSubsequences(new int[]{1,3,5,7});
 
-        D_17 d_17=new D_17();
-//        d_17.letterCombinations("2379");
-        d_17.letterCombinations("23");
+//        D_17 d_17=new D_17();
+////        d_17.letterCombinations("2379");
+//        d_17.letterCombinations("23");
 
+        //[["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
+        List<List<String>> input=new ArrayList<>();
+
+        List<String> l1=new ArrayList<>();
+        l1.add("JFK");
+        l1.add("SFO");
+        input.add(l1);
+
+        List<String> l2=new ArrayList<>();
+        l2.add("JFK");
+        l2.add("ATL");
+        input.add(l2);
+
+        List<String> l3=new ArrayList<>();
+        l3.add("SFO");
+        l3.add("ATL");
+        input.add(l3);
+
+        List<String> l4=new ArrayList<>();
+        l4.add("ATL");
+        l4.add("JFK");
+        input.add(l4);
+
+        List<String> l5=new ArrayList<>();
+        l5.add("ATL");
+        l5.add("SFO");
+        input.add(l5);
+
+        D_332 d_332=new D_332();
+        List<String> itinerary = d_332.findItinerary(input);
         d();
     }
 
