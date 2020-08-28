@@ -1,10 +1,8 @@
 package com.payne.leetCode.daily;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -51,30 +49,60 @@ public class D_332 {
             return new ArrayList<>();
         }
         String start = "JFK";
-        List<List<String>> result = new ArrayList<>();
-        List<List<String>> ans = new ArrayList<>();
-        List<String> list = new ArrayList<>();
-        list.add(start);
-        ans.add(list);
-        bfs(tickets, ans,result);
-        return result.get(0);
+        List<String> result = new ArrayList<>();
+        List<String> ans = new ArrayList<>();
+        ans.add(start);
+        Set<String> history = new HashSet<>();
+        dfs(tickets, ans, result, history, tickets.size() + 1);
+        return result;
     }
 
-    private void bfs(List<List<String>> tickets, List<List<String>> ans, List<List<String>> result) {
-
-        List<List<String>> newAns = new ArrayList<>();
-        List<List<String>> newTic = new ArrayList<>();
-        for (int i = 0; i < ans.size(); i++) {
-            List<String> list = ans.get(i);
-            String lastTo = list.get(list.size() - 1);
-            for (List<String> route : tickets) {
-                String from = route.get(0);
-                String to = route.get(1);
-                if(lastTo.equals(from)){
-                    List<String> tem=new ArrayList<>(list);
-                    tem.add(to);
-                    newAns.add(tem);
+    private void dfs(List<List<String>> tickets, List<String> ans,
+                     List<String> result, Set<String> history, int len) {
+        if (tickets.size() == 0 && ans.size() == len) {
+            if (result.size() == 0) {
+                result.addAll(ans);
+            } else {
+                boolean replace = false;
+                for (int i = 0; i < ans.size(); i++) {
+                    int com = result.get(i).compareTo(ans.get(i));
+                    if (com > 0) {
+                        replace = true;
+                        break;
+                    } else if (com < 0) {
+                        break;
+                    }
                 }
+                if (replace) {
+                    result.clear();
+                    result.addAll(ans);
+                }
+            }
+            return;
+        }
+
+        StringBuilder ansStr = new StringBuilder();
+        for (String s : ans) {
+            ansStr.append(s);
+        }
+        if (history.contains(ansStr.toString())) {
+            return;
+        }
+        history.add(ansStr.toString());
+
+        String lastTo = ans.get(ans.size() - 1);
+        for (int j = 0; j < tickets.size(); j++) {
+            List<String> route = tickets.get(j);
+            String from = route.get(0);
+            String to = route.get(1);
+            if (lastTo.equals(from)) {
+                List<String> newAns = new ArrayList<>(ans);
+                newAns.add(to);
+
+                List<List<String>> newTic = new ArrayList<>(tickets);
+                newTic.remove(j);
+
+                dfs(newTic, newAns, result, history, len);
             }
         }
     }
