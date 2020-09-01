@@ -47,7 +47,7 @@ class I_04 {
         }
         if (root.left != null && root.right != null) {
             return isBalanced(root.left) && isBalanced(root.right)
-                    && Math.abs(getDep(root.left) - getDep(root.right)) <= 1;
+                    && Math.abs(getDepth(root.left) - getDepth(root.right)) <= 1;
         }
         if (root.left == null) {
             return root.right.left == null && root.right.right == null;
@@ -56,11 +56,11 @@ class I_04 {
         }
     }
 
-    public int getDep(TreeNode root) {
+    public int getDepth(TreeNode root) {
         if (root == null) {
             return 0;
         } else {
-            return 1 + Math.max(getDep(root.left), getDep(root.right));
+            return 1 + Math.max(getDepth(root.left), getDepth(root.right));
         }
     }
 }
