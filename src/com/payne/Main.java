@@ -407,9 +407,12 @@ public class Main {
 //        List<String> itinerary = d_332.findItinerary(input);
 
 
-        D_486 d_486 = new D_486();
-        int[] is = new int[]{1, 5, 2};
-        d_486.PredictTheWinner(is);
+//        D_486 d_486 = new D_486();
+//        int[] is = new int[]{1, 5, 2};
+//        d_486.PredictTheWinner(is);
+
+        D_O_20 d_o_20=new D_O_20();
+        boolean b=d_o_20.isNumber("1");
         d();
     }
 
