@@ -53,21 +53,21 @@ public class P_547 {
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
      */
 
-    public int findCircleNum(int[][] M) {
-        int len = M.length;
-        if (len < 1) {
-            return 0;
-        }
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < len; i++) {
-            List<Integer> list = new ArrayList<>();
-            for (int j = i + 1; j < len; j++) {
-                if (1 == M[i][j]) {
-                    list.add(j);
-                }
-            }
-
-        }
-
-    }
+//    public int findCircleNum(int[][] M) {
+//        int len = M.length;
+//        if (len < 1) {
+//            return 0;
+//        }
+//        Set<Integer> set = new HashSet<>();
+//        for (int i = 0; i < len; i++) {
+//            List<Integer> list = new ArrayList<>();
+//            for (int j = i + 1; j < len; j++) {
+//                if (1 == M[i][j]) {
+//                    list.add(j);
+//                }
+//            }
+//
+//        }
+//
+//    }
 }
