@@ -30,13 +30,13 @@ public class D_60 {
 输出: "2314"
      */
 
-    public String getPermutation(int n, int k) {
-        String s="";
-        for(int i=1;i<=n;i++){
-            s+=i;
-        }
-        for(int i=0;i<k;i++){
-
-        }
-    }
+//    public String getPermutation(int n, int k) {
+//        String s="";
+//        for(int i=1;i<=n;i++){
+//            s+=i;
+//        }
+//        for(int i=0;i<k;i++){
+//
+//        }
+//    }
 }
