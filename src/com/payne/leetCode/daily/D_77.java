@@ -41,7 +41,7 @@ public class D_77 {
                     ans.add(tem);
                 }
             } else {
-                for (int i = 1; i <= n; i++) {
+                for (int i = 2; i <= n; i++) {
                     List<List<Integer>> res = combine(i - 1, k - 1);
                     for (List<Integer> tem : res) {
                         tem.add(i);
