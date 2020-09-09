@@ -52,8 +52,8 @@ public class Main {
 
         test();
 
-       D_77 d_77=new D_77();
-        List<List<Integer>> combine = d_77.combine(4, 2);
+       D_39 d_39=new D_39();
+       d_39.combinationSum(new int[]{2,3,6,7},7);
 
         d();
 
