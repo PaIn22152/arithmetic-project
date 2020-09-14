@@ -1,6 +1,7 @@
 package com.payne.leetCode.daily;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -90,6 +91,20 @@ candidates 中的每个数字在每个组合中只能使用一次。
             }
         }
         return ans;
+    }
+
+
+    //动态规划
+    public List<List<Integer>> combinationSum3(int[] candidates, int target) {
+        Arrays.sort(candidates);
+        List<List<Integer>> ans=new ArrayList<>();
+        for(int i:candidates){
+            if(target==i){
+                List<Integer> list = new ArrayList<>();
+                list.add(target);
+                ans.add(list);
+            }
+        }
     }
 
 
