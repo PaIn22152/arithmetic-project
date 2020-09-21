@@ -95,17 +95,17 @@ candidates 中的每个数字在每个组合中只能使用一次。
 
 
     //动态规划
-    public List<List<Integer>> combinationSum3(int[] candidates, int target) {
-        Arrays.sort(candidates);
-        List<List<Integer>> ans=new ArrayList<>();
-        for(int i:candidates){
-            if(target==i){
-                List<Integer> list = new ArrayList<>();
-                list.add(target);
-                ans.add(list);
-            }
-        }
-    }
+//    public List<List<Integer>> combinationSum3(int[] candidates, int target) {
+//        Arrays.sort(candidates);
+//        List<List<Integer>> ans=new ArrayList<>();
+//        for(int i:candidates){
+//            if(target==i){
+//                List<Integer> list = new ArrayList<>();
+//                list.add(target);
+//                ans.add(list);
+//            }
+//        }
+//    }
 
 
 }

@@ -1,5 +1,6 @@
 package com.payne;
 
+import com.payne.leetCode.TreeNode;
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.contest.Weekly_197;
 import com.payne.leetCode.daily.*;
@@ -50,10 +51,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        test();
-
-       D_39 d_39=new D_39();
-       d_39.combinationSum(new int[]{2,3,6,7},7);
+        D_538 d_538 = new D_538();
+        TreeNode treeNode = new TreeNode();
+        treeNode.val = 3;
+        TreeNode treeNode2 = new TreeNode();
+        treeNode2.val = 2;
+        treeNode2.left = treeNode;
+        TreeNode t=d_538.convertBST2(treeNode2);
 
         d();
 
