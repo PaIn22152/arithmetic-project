@@ -51,14 +51,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        D_538 d_538 = new D_538();
-        TreeNode treeNode = new TreeNode();
-        treeNode.val = 3;
-        TreeNode treeNode2 = new TreeNode();
-        treeNode2.val = 2;
-        treeNode2.left = treeNode;
-        TreeNode t=d_538.convertBST2(treeNode2);
 
+        D_106 d_106 = new D_106();
+        int[] i1 = new int[]{9, 3, 15, 20, 7};
+        int[] i2 = new int[]{9, 15, 7, 20, 3};
+        TreeNode treeNode = d_106.buildTree(i1, i2);
         d();
 
 
