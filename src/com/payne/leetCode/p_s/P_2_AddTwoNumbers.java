@@ -20,7 +20,38 @@ public class P_2_AddTwoNumbers {
      * [5,6,4]
      */
 
+    public ListNode addTwoNumbers3(ListNode l1, ListNode l2) {
+        ListNode pre = new ListNode(0);
+        ListNode tem = pre;
+        int tag = 0;
+        while (l1 != null || l2 != null) {
+            int a = l1 == null ? 0 : l1.val;
+            int b = l2 == null ? 0 : l2.val;
+            int sum = a + b + tag;
+            tag = sum / 10;
+            sum %= 10;
 
+            tem.next = new ListNode(sum);
+            tem = tem.next;
+
+            if (l1 != null)
+                l1 = l1.next;
+            if (l2 != null)
+                l2 = l2.next;
+        }
+        if (tag > 0) {
+            tem.next = new ListNode(tag);
+        }
+        return pre.next;
+    }
+
+
+    /**
+     * //递归
+     * 执行用时：2 ms, 在所有 Java 提交中击败了99.99%的用户
+     * <p>
+     * 内存消耗：38.8 MB, 在所有 Java 提交中击败了67.33%的用户
+     */
     public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         return addTwoNumbers2(l1, l2, false);
     }
