@@ -17,6 +17,42 @@ import java.util.regex.Pattern;
  */
 public class P_8_StringToInteger {
 
+
+    public int myAtoi3(String str) {
+        str = str.replace(" ", "");
+        if (str.length() == 0) {
+            return 0;
+        }
+        boolean plus = true;
+        int p = 0;
+        if (str.charAt(0) == '-' || str.charAt(0) == '+') {
+            if (str.length() == 1) {
+                return 0;
+            }
+            if (str.charAt(0) == '-') {
+                plus = false;
+            } else {
+                plus = true;
+            }
+            p = 1;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = p; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (Character.isDigit(c)) {
+                sb.append(c);
+            } else {
+                break;
+            }
+        }
+        if(sb.length()==0){
+            return 0;
+        }
+        int v = Integer.parseInt(sb.toString());
+        return plus ? v : -v;
+    }
+
+
     public static int myAtoi(String str) {
         try {
             str = str.trim();

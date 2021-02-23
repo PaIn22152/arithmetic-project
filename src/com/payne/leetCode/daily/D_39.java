@@ -99,13 +99,7 @@ candidate 中的每个元素都是独一无二的。
     }
 
 
-    public List<List<Integer>> combinationSum4(int[] candidates, int target) {
-        return handle(candidates, target, 0);
-    }
 
-    public List<List<Integer>> handle(int[] candidates, int target, int index) {
-
-    }
 
 
     //官方代码
