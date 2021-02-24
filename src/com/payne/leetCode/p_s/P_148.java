@@ -53,10 +53,9 @@ public class P_148 {
     }
 
 
-    //归并排序
-//    public ListNode sortList2(ListNode head) {
-//
-//    }
+    public ListNode sortList2(ListNode head) {
+
+    }
 
 
     //
