@@ -41,7 +41,5 @@ class D_145 {
         return ans;
     }
 
-    public List<Integer> postorderTraversal2(TreeNode root) {
 
-    }
 }

@@ -6,6 +6,7 @@ import com.payne.leetCode.contest.Weekly_197;
 import com.payne.leetCode.daily.*;
 import com.payne.leetCode.p_s.P_130_SurroundedRegions;
 import com.payne.leetCode.p_s.P_26_RemoveDuplicatesfromSortedArray;
+import com.payne.leetCode.p_s.P_5_LongestPalindromicSubstring;
 import com.payne.leetCode.p_s.P_763;
 import com.payne.leetCode.p_s.P_805;
 import com.payne.leetCode.p_s.P_array;
@@ -52,11 +53,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        D_106 d_106 = new D_106();
-        int[] i1 = new int[]{9, 3, 15, 20, 7};
-        int[] i2 = new int[]{9, 15, 7, 20, 3};
-        TreeNode treeNode = d_106.buildTree(i1, i2);
-        d();
+        P_5_LongestPalindromicSubstring p=new P_5_LongestPalindromicSubstring();
+        p.longestPalindrome4("cbbd");
 
 
     }

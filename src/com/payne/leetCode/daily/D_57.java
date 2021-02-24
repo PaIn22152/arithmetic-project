@@ -27,30 +27,7 @@ class D_57 {
 输出：[[1,2],[3,10],[12,16]]
 解释：这是因为新的区间 [4,8] 与 [3,5],[6,7],[8,10] 重叠。
     * */
-    public int[][] insert(int[][] intervals, int[] newInterval) {
-        int start = newInterval[0];
-        int end = newInterval[1];
 
-        List<Integer> combine=new ArrayList<>();
-        int p=0;
-        for (int i=0; i< intervals.length;i++) {
-            int[] tem=intervals[i];
-            int ts = tem[0];
-            int te = tem[1];
-            if (ts <= start && te >= end) {
-                return intervals;
-            }
-            else if(end<ts){
-                break;
-            }
-            else if(end<te){
-                combine.add(i);
-                break;
-            }else(ts>=start){
-
-            }
-        }
-    }
 
 
     //官方代码

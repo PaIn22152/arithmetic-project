@@ -68,9 +68,7 @@ class Weekly_208 {
 
         }
 
-        public List<String> getInheritanceOrder() {
 
-        }
     }
 
 

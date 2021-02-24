@@ -53,9 +53,7 @@ public class P_148 {
     }
 
 
-    public ListNode sortList2(ListNode head) {
 
-    }
 
 
     //
