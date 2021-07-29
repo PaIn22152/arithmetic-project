@@ -1,8 +1,6 @@
 package com.payne.sorts;
 
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Random;
 
 /**
@@ -22,15 +20,20 @@ public class Main {
         int[] data1 = createData(25000);
         int[] data2 = createData(50000);
         int[] data3 = createData(85000);
-        int[] data4 = createData(110000);
+        int[] data4 = createData(200);
 
-        bubbleSort(data1);
-        selectionSort(data2);
-        insertionSort(data3);
+//        bubbleSort(data1);
+//        selectionSort(data2);
+//        insertionSort(data3);
         insertionSort2(data4);
 
 
-//        printData(data4);
+        printData(data4);
+
+    }
+
+    //希尔排序
+    private static  void shellSort(int[] data){
 
     }
 
@@ -69,7 +72,7 @@ public class Main {
 
         for (int i = 1; i < data.length; i++) {
             for (int j = 0; j < i; j++) {
-                if (data[i] <= data[j]) {
+                if (data[i] < data[j]) {
                     int tem = data[i];
                     for (int k = i; k > j; k--) {
                         data[k] = data[k - 1];
@@ -143,7 +146,11 @@ public class Main {
         int[] data = new int[len];
         Random random = new Random();
         for (int i = 0; i < data.length; i++) {
-            data[i] = random.nextInt(len);
+            if (random.nextBoolean()) {
+                data[i] = random.nextInt(len * 2) + random.nextInt(len);
+            } else {
+                data[i] = random.nextInt(len * 2) - random.nextInt(len);
+            }
         }
         return data;
     }

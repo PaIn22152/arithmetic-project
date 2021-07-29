@@ -1,5 +1,6 @@
 package com.payne;
 
+import com.payne.af.StringEncryptUtil;
 import com.payne.leetCode.TreeNode;
 import com.payne.leetCode.contest.DW_18;
 import com.payne.leetCode.contest.Weekly_197;
@@ -30,7 +31,6 @@ public class Main {
     }
 
     private static void test() {
-
         d();
     }
 
@@ -53,7 +53,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        P_5_LongestPalindromicSubstring p=new P_5_LongestPalindromicSubstring();
+        P_5_LongestPalindromicSubstring p = new P_5_LongestPalindromicSubstring();
         p.longestPalindrome4("cbbd");
 
 
