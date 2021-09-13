@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9373231c-3096-4736-9ba9-3600e123261b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/payne/jzOffer/JZ42.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/payne/jzOffer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/payne/jzOffer/info.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payne/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payne/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/payne/sorts/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/payne/sorts/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="9373231c-3096-4736-9ba9-3600e123261b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +17,7 @@
     <session id="-1858653894">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="50" />
+          <entry key="project.closed" value="51" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="2" />
@@ -135,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/payne/utils/PrintHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="112" column="48" lean-forward="true" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
+            <state relative-caret-position="397">
+              <caret line="119" column="51" lean-forward="true" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
               <folding>
                 <element signature="e#3215#3216#0" expanded="true" />
                 <element signature="e#3270#3271#0" expanded="true" />
@@ -268,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
     <option name="width" value="1865" />
     <option name="height" value="1080" />
@@ -332,7 +325,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627551561436" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627619347069" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -398,7 +391,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23093449" />
@@ -873,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/payne/utils/PrintHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="112" column="48" lean-forward="true" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
+        <state relative-caret-position="397">
+          <caret line="119" column="51" lean-forward="true" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
           <folding>
             <element signature="e#3215#3216#0" expanded="true" />
             <element signature="e#3270#3271#0" expanded="true" />
